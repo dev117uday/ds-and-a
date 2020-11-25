@@ -13,6 +13,7 @@
 ## CP
 
 * [LeetCode](cp/leetcode/README.md)
+  * [Questions \(Set 2\)](cp/leetcode/questions-set-2.md)
   * [Questions \(Set 1\)](cp/leetcode/questions-set-1.md)
 * [HackerRank](cp/hackerrank/README.md)
   * [30 days of Code](cp/hackerrank/30-days-of-code.md)
