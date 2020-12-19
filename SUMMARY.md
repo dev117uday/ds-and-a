@@ -36,3 +36,7 @@
   * [Golang](data-structure/binary-search-tree/golang.md)
   * [C\#](data-structure/binary-search-tree/c.md)
 
+## Named
+
+* [Named Algorithms](named/named-algorithms.md)
+

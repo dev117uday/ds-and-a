@@ -4,71 +4,32 @@ description: Mathematical Questions
 
 # Mathematics - 1
 
-All things maths related
+### Basic Maths
 
-### Greatest Common Divisor \( GCD \)
+#### Sum of AP
 
-Go : 
+$$
+sum = n/2*(2a+(n-1)d
+$$
 
-```text
-package main
+#### Sum of GP
 
-import (
-	"fmt"
-)
+$$
+sum of GP = a(1-r^n)/1-r
+$$
 
-func gcd(m int, n int) int {
+**Mean :** sum of all numbers divided by number of numbers
 
-	if m == 0 {
-		return n
-	}
-	return gcd(n%m, m)
-}
+**Median** : 
 
-func main() {
-	fmt.Println(gcd(28, 8))
-}
-```
+* For odd number of numbers : middle number 
+* For even number of numbers : = \(mean\_of\_2\_middle anumbers\)/2
 
-### First N Prime
+**LCM**  
 
-Go : 
+![\mathrm {lcm} \(a,b\) = \frac {\|a \cdot b\|}{gcd \(a,b\)}](https://www.gstatic.com/education/formulas2/-1/en/greatest_common_divisor.svg)
 
-```text
-package main
-
-import (
-	"fmt"
-)
-
-func firstNprime(number int) []int {
-
-	var array []int
-	for i := 1; i <= number; i++ {
-		if i == 1 {
-			continue
-		}
-		flag := 0
-		for j := 2; j <= i/2; j++ {
-			if i%j == 0 {
-				flag = 1
-				break
-			}
-		}
-		if flag == 0 {
-			array = append(array, i)
-		}
-	}
-	return array
-
-}
-
-func main() {
-	fmt.Println(firstNprime(100))
-}
-```
-
-
+### Number of Digits
 
 #### Number of Digits in a number \(iteratively\)
 
@@ -131,28 +92,65 @@ func main() {
 }
 ```
 
-#### Sum of AP
+### Greatest C Divisor or Highest C Factor \( GCD\|HCF \)
 
-$$
-sum = n/2*(2a+(n-1)d
-$$
+Go : 
 
-#### Sum of GP
+```text
+package main
 
-$$
-sum of GP = a(1-r^n)/1-r
-$$
+import (
+	"fmt"
+)
 
-**Mean :** sum of all numbers divided by number of numbers
+func gcd(m int, n int) int {
 
-**Median** : 
+	if m == 0 {
+		return n
+	}
+	return gcd(n%m, m)
+}
 
-* For odd number of numbers : middle number 
-* For even number of numbers : = \(mean\_of\_2\_middle anumbers\)/2
+func main() {
+	fmt.Println(gcd(28, 8))
+}
+```
 
-**LCM**  
+### First N Prime
 
-![\mathrm {lcm} \(a,b\) = \frac {\|a \cdot b\|}{gcd \(a,b\)}](https://www.gstatic.com/education/formulas2/-1/en/greatest_common_divisor.svg)
+Go : 
 
+```text
+package main
 
+import (
+	"fmt"
+)
+
+func firstNprime(number int) []int {
+
+	var array []int
+	for i := 1; i <= number; i++ {
+		if i == 1 {
+			continue
+		}
+		flag := 0
+		for j := 2; j <= i/2; j++ {
+			if i%j == 0 {
+				flag = 1
+				break
+			}
+		}
+		if flag == 0 {
+			array = append(array, i)
+		}
+	}
+	return array
+
+}
+
+func main() {
+	fmt.Println(firstNprime(100))
+}
+```
 
