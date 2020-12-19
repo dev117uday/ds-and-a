@@ -6,9 +6,7 @@
 
 ---
 
-* [Mathematics](mathematics/README.md)
-  * [Greatest Common Divisor \( GCD \)](mathematics/greatest-common-divisor-gcd.md)
-  * [First N Prime](mathematics/first-n-prime.md)
+* [Mathematics - 1](mathematics.md)
 
 ## CP
 
@@ -24,13 +22,9 @@
     * [Questions \(Set 2\)](cp/codeforce/a/questions-set-2.md)
     * [Questions \(Set 1\)](cp/codeforce/a/questions-set-1.md)
 
-## Template
-
-* [Golang](template/golang.md)
-
 ## Notes
 
-* [Golang Tips & Tricks](notes/golang-tips-and-tricks.md)
+* [Golang Starter Kit](notes/golang-tips-and-tricks.md)
 
 ## Data Structure
 

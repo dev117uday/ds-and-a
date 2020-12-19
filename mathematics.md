@@ -2,9 +2,71 @@
 description: Mathematical Questions
 ---
 
-# Mathematics
+# Mathematics - 1
 
 All things maths related
+
+### Greatest Common Divisor \( GCD \)
+
+Go : 
+
+```text
+package main
+
+import (
+	"fmt"
+)
+
+func gcd(m int, n int) int {
+
+	if m == 0 {
+		return n
+	}
+	return gcd(n%m, m)
+}
+
+func main() {
+	fmt.Println(gcd(28, 8))
+}
+```
+
+### First N Prime
+
+Go : 
+
+```text
+package main
+
+import (
+	"fmt"
+)
+
+func firstNprime(number int) []int {
+
+	var array []int
+	for i := 1; i <= number; i++ {
+		if i == 1 {
+			continue
+		}
+		flag := 0
+		for j := 2; j <= i/2; j++ {
+			if i%j == 0 {
+				flag = 1
+				break
+			}
+		}
+		if flag == 0 {
+			array = append(array, i)
+		}
+	}
+	return array
+
+}
+
+func main() {
+	fmt.Println(firstNprime(100))
+}
+```
 
 
 
