@@ -4,9 +4,7 @@
 
 ## Maths
 
----
-
-* [Mathematics - 1](mathematics.md)
+* [Mathematics - 1](maths/mathematics.md)
 
 ## CP
 
@@ -37,7 +35,7 @@
   * [Golang](data-structure/binary-search-tree/golang.md)
   * [C\#](data-structure/binary-search-tree/c.md)
 
-## Named
+## Named Algorithms <a id="named"></a>
 
-* [Named Algorithms](named/named-algorithms.md)
+* [Named Algorithms \(Part 1\)](named/named-algorithms.md)
 
