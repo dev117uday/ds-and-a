@@ -1,2 +1,2 @@
-# Named Algorithms
+# Named Algorithms \(Part 1\)
 

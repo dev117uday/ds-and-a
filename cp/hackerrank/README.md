@@ -1,7 +1,7 @@
 # HackerRank
 
 ```text
-- 30 days of cloud
+- 30 days of hackerrank
 ```
 
 
