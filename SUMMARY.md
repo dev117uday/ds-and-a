@@ -6,9 +6,7 @@
 
 ---
 
-* [Mathematics](mathematics/README.md)
-  * [Greatest Common Divisor \( GCD \)](mathematics/greatest-common-divisor-gcd.md)
-  * [First N Prime](mathematics/first-n-prime.md)
+* [Mathematics - 1](mathematics.md)
 
 ## CP
 
@@ -24,13 +22,9 @@
     * [Questions \(Set 2\)](cp/codeforce/a/questions-set-2.md)
     * [Questions \(Set 1\)](cp/codeforce/a/questions-set-1.md)
 
-## Template
-
-* [Golang](template/golang.md)
-
 ## Notes
 
-* [Golang Tips & Tricks](notes/golang-tips-and-tricks.md)
+* [Golang Starter Kit](notes/golang-tips-and-tricks.md)
 
 ## Data Structure
 
@@ -38,7 +32,12 @@
   * [Golang](data-structure/linkedlist/golang.md)
   * [C++](data-structure/linkedlist/c++.md)
 * [Binary Search Tree](data-structure/binary-search-tree/README.md)
+  * [Java](data-structure/binary-search-tree/java.md)
   * [C++](data-structure/binary-search-tree/c++.md)
   * [Golang](data-structure/binary-search-tree/golang.md)
   * [C\#](data-structure/binary-search-tree/c.md)
+
+## Named
+
+* [Named Algorithms](named/named-algorithms.md)
 

@@ -1,6 +1,0 @@
----
-description: Mathematical Questions
----
-
-# Mathematics
-

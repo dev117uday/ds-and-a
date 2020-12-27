@@ -237,7 +237,7 @@ func main() {
 }
 ```
 
-### csp.go
+### child sum property.go
 
 ```text
 package main
@@ -654,4 +654,68 @@ func main() {
 
 }
 ```
+
+#### Max width of tree
+
+```text
+package main
+
+import (
+	"fmt"
+)
+
+type tree struct {
+	key   int
+	left  *tree
+	right *tree
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}
+
+func maxwidth(root *tree) int {
+	if root == nil {
+		return 0
+	}
+	l := []*tree{root}
+	result := 0
+	for len(l) != 0 {
+		count := len(l)
+		result = max(count, result)
+		for i := 0; i < count; i++ {
+			temp := l[0]
+			if temp.left != nil {
+				l = append(l, temp.left)
+			}
+			if temp.right != nil {
+				l = append(l, temp.right)
+			}
+			l = l[1:]
+		}
+		fmt.Println(l)
+	}
+	return result
+}
+
+func main() {
+
+	root := &tree{key: 10, left: nil, right: nil}
+	root.left = &tree{key: 20, left: nil, right: nil}
+	root.left.left = &tree{key: 40, left: nil, right: nil}
+	root.left.right = &tree{key: 50, left: nil, right: nil}
+	root.right = &tree{key: 30, left: nil, right: nil}
+	root.right.left = &tree{key: 60, left: nil, right: nil}
+	// fmt.Println("In-order")
+
+	fmt.Println(maxwidth(root))
+
+}
+
+```
+
+
 
