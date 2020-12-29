@@ -24,9 +24,6 @@ class tree {
 }
 
 class Program {
-    int maxwidth(tree root) {
-        return 11;
-    }
 
     static void inorderTraversal(tree root) {
         if (root == null) {
@@ -642,4 +639,104 @@ class GFG {
     }
 }
 ```
+
+### Inorder iteratively
+
+```java
+import java.util.Stack;
+
+class Tree {
+	int key;
+	Tree left;
+	Tree right;
+
+	Tree(int key) {
+		this.key = key;
+		left = null;
+		right = null;
+	}
+}
+
+class Program {
+
+	static void iterInorder(Tree root) {
+
+		Stack<Tree> stack = new Stack<Tree>();
+		Tree curr = root;
+		while (curr != null || stack.isEmpty() == false) {
+			while (curr != null) {
+				stack.push(curr);
+				curr = curr.left;
+			}
+			curr = stack.pop();
+			System.out.println(curr.key);
+			curr = curr.right;
+		}
+	}
+
+	public static void main(String[] args) {
+		Tree first = new Tree(10);
+		first.left = new Tree(20);
+		first.right = new Tree(30);
+		first.left.left = new Tree(40);
+		first.left.right = new Tree(50);
+		first.right.left = new Tree(60);
+		first.right.right = new Tree(70);
+		iterInorder(first);
+	}
+}
+```
+
+### Preorder iteratively
+
+```java
+import java.util.Stack;
+
+class Tree {
+	int key;
+	Tree left;
+	Tree right;
+
+	Tree(int key) {
+		this.key = key;
+		left = null;
+		right = null;
+	}
+}
+
+class Program {
+
+	static void iterativePreorder(Tree root) {
+		if (root == null) {
+			return;
+		}
+		Stack<Tree> TreeStack = new Stack<Tree>();
+		TreeStack.push(root);
+		while (TreeStack.empty() == false) {
+			Tree myTree = TreeStack.peek();
+			System.out.print(myTree.key + " ");
+			TreeStack.pop();
+			if (myTree.right != null) {
+				TreeStack.push(myTree.right);
+			}
+			if (myTree.left != null) {
+				TreeStack.push(myTree.left);
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		Tree first = new Tree(10);
+		first.left = new Tree(20);
+		first.right = new Tree(30);
+		first.left.left = new Tree(40);
+		first.left.right = new Tree(50);
+		first.right.left = new Tree(60);
+		first.right.right = new Tree(70);
+		iterativePreorder(first);
+	}
+}
+```
+
+
 
