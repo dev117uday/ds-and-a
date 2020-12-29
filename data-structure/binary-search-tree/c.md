@@ -6,7 +6,7 @@ description: Linkedlist
 
 ### breadth-first.cs
 
-```text
+```csharp
 using System;
 using System.Collections.Generic;
 
@@ -63,7 +63,7 @@ namespace csharp_ide
 
 ### bstToDll.cs
 
-```text
+```csharp
 using System;
 using System.Collections.Generic;
 
@@ -129,7 +129,7 @@ namespace csharp_ide
 
 ### checkBalance.cs
 
-```text
+```csharp
 using System;
 using System.Collections.Generic;
 
@@ -191,7 +191,7 @@ namespace csharp_ide
 
 ### heightBst.cs
 
-```text
+```csharp
 using System;
 using System.Collections.Generic;
 
@@ -241,7 +241,7 @@ namespace csharp_ide
 
 ### inorderIter.cs
 
-```text
+```csharp
 using System;
 using System.Collections.Generic;
 
@@ -305,7 +305,7 @@ namespace csharp_ide
 
 ### kdistance.cs
 
-```text
+```csharp
 using System;
 using System.Collections.Generic;
 
@@ -358,7 +358,7 @@ namespace csharp_ide
 
 ### leftViewTree.cs
 
-```text
+```csharp
 using System;
 using System.Collections.Generic;
 
@@ -414,7 +414,7 @@ namespace csharp_ide
 
 ### maxValTree.cs
 
-```text
+```csharp
 using System;
 using System.Collections.Generic;
 
@@ -464,7 +464,7 @@ namespace csharp_ide
 
 ### maxWidth.cs
 
-```text
+```csharp
 using System;
 using System.Collections.Generic;
 
@@ -530,7 +530,7 @@ class Program
 
 ### sizeOfBST.cs
 
-```text
+```csharp
 using System;
 using System.Collections.Generic;
 

@@ -6,7 +6,7 @@ description: Linkedlist
 
 ### biggest\_element.cpp 
 
-```text
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -53,7 +53,7 @@ int main(){
 
 ### get\_size.cpp
 
-```text
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -86,7 +86,7 @@ int main(){
 
 ### height\_bst.cpp
 
-```text
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -127,7 +127,7 @@ int main(){
 
 ### transversal.cpp
 
-```text
+```cpp
 #include <iostream>
 
 using namespace std;

@@ -6,7 +6,7 @@ description: Linkedlist
 
 ### breadth-first.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -69,7 +69,7 @@ func main() {
 
 ### bst.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -124,7 +124,7 @@ func main() {
 
 ### bsttodll.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -183,7 +183,7 @@ func newTreeNode(number int) *tree {
 
 ### checkBalance.go
 
-```text
+```go
 package main
 
 import (
@@ -243,7 +243,7 @@ func main() {
 
 ### child sum property.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -289,7 +289,7 @@ func main() {
 
 ### height-bst.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -343,7 +343,7 @@ func main() {
 
 ### k-distance.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -396,7 +396,7 @@ func main() {
 
 ### leftViewTree.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -440,7 +440,7 @@ func main() {
 
 ### lot-line.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -507,7 +507,7 @@ func main() {
 
 ### maxValtree.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -567,7 +567,7 @@ func main() {
 
 ### rightViewtree.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -613,7 +613,7 @@ func main() {
 
 ### sizeoftree.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -661,7 +661,7 @@ func main() {
 
 #### Max width of tree
 
-```text
+```go
 package main
 
 import (
