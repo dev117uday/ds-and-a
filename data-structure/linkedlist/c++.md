@@ -6,7 +6,7 @@ description: Linkedlist
 
 ### circular-linkedlist.cpp
 
-```text
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -59,7 +59,7 @@ int main(){
 
 ### double-linked-list.cpp
 
-```text
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -134,7 +134,7 @@ int main()
 
 ### linkedlist.cpp
 
-```text
+```cpp
 #include <iostream>
 
 using namespace std;

@@ -6,7 +6,7 @@ description: Linkedlist
 
 ### circularlinkedlist.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -59,7 +59,7 @@ func main() {
 
 ### doublylinkedlist.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -124,7 +124,7 @@ func main() {
 
 ### falling\_linkedlist.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -166,7 +166,7 @@ func main(){
 
 ### linkedlist.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -261,7 +261,7 @@ func (L *List) attach(number int) {
 
 ### list.go
 
-```text
+```go
 package linkedlist
 
 type node struct {
