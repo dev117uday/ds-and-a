@@ -32,6 +32,7 @@
   * [Golang](data-structure/linkedlist/golang.md)
   * [C++](data-structure/linkedlist/c++.md)
 * [Binary Search Tree](data-structure/binary-search-tree-1.md)
+* [Graphs](data-structure/graphs.md)
 * [Hashing](data-structure/hashing.md)
 * [Binary Tree](data-structure/binary-search-tree/README.md)
   * [Java](data-structure/binary-search-tree/java.md)
