@@ -9,8 +9,6 @@
 ## CP
 
 * [LeetCode](cp/leetcode/README.md)
-  * [2021](cp/leetcode/2021/README.md)
-    * [Jan 2021](cp/leetcode/2021/jan-2021.md)
   * [Questions \(Set 2\)](cp/leetcode/questions-set-2.md)
   * [Questions \(Set 1\)](cp/leetcode/questions-set-1.md)
 * [HackerRank](cp/hackerrank/README.md)
@@ -32,7 +30,10 @@
   * [Golang](data-structure/linkedlist/golang.md)
   * [C++](data-structure/linkedlist/c++.md)
 * [Binary Search Tree](data-structure/binary-search-tree-1.md)
-* [Graphs](data-structure/graphs.md)
+* [Graphs](data-structure/graphs/README.md)
+  * [Breadth First Search](data-structure/graphs/breadth-first-search.md)
+  * [Depth First Search](data-structure/graphs/depth-first-search.md)
+  * [DFS vs BFS](data-structure/graphs/dfs-vs-bfs.md)
 * [Hashing](data-structure/hashing.md)
 * [Binary Tree](data-structure/binary-search-tree/README.md)
   * [Java](data-structure/binary-search-tree/java.md)
@@ -43,5 +44,4 @@
 ## Algorithms <a id="named"></a>
 
 * [Sorting](named/sorting.md)
-* [Named Algorithms \(Part 1\)](named/named-algorithms.md)
 
