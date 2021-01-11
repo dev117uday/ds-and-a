@@ -6,7 +6,7 @@ description: Leetcode solutions set 2
 
 ### Remove Nth Node From End of List
 
-```text
+```go
 func removeNthFromEnd(head *ListNode, n int) *ListNode {
     if n == 1 {
         if head.Next == nil {
@@ -48,7 +48,7 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 
 ### Design Linkedlist Golang
 
-```text
+```go
 type Node struct {
 	val  int
 	next *Node
@@ -174,4 +174,90 @@ func (this *MyLinkedList) DeleteAtIndex(index int) {
 	}
 }
 ```
+
+### Remove Duplicates from Sorted List II
+
+```java
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        ListNode t = new ListNode(0);
+        t.next = head;
+
+        ListNode p = t;
+        while(p.next!=null&&p.next.next!=null) {
+            if(p.next.val == p.next.next.val) {
+                int dup = p.next.val;
+                while(p.next!=null&&p.next.val==dup) {
+                    p.next = p.next.next;
+                }
+            } else {
+                p=p.next;
+            }
+        }
+        return t.next;
+    }
+}
+```
+
+### Find a Corresponding Node of a Binary Tree in a Clone of That Tree
+
+```java
+class Solution {
+    public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {
+        if(original == null){
+            return null;
+        }
+        
+        if(original == target){
+            return cloned;
+        }
+        
+        TreeNode left = getTargetCopy(original.left, cloned.left, target);
+        if(left != null){
+            return left;
+        }
+        
+        TreeNode right = getTargetCopy(original.right, cloned.right, target);
+        if(right != null){
+            return right;
+        }
+        
+        return null;
+    }
+}
+```
+
+### Merge Two Sorted Lists
+
+```java
+public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+    ListNode head = new ListNode(0);
+    ListNode p=head;
+ 
+    ListNode p1=l1;
+    ListNode p2=l2;
+    while(p1!=null && p2!=null){
+        if(p1.val < p2.val){
+            p.next = p1;
+            p1 = p1.next;
+        }else{
+            p.next = p2;
+            p2 = p2.next;
+        }
+        p=p.next;
+    }
+ 
+    if(p1!=null){
+        p.next = p1;
+    }
+ 
+    if(p2!=null){
+        p.next = p2;
+    }
+ 
+    return head.next;
+}
+```
+
+
 
