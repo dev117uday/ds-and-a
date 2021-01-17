@@ -31,6 +31,7 @@
   * [C++](data-structure/linkedlist/c++.md)
 * [Binary Search Tree](data-structure/binary-search-tree-1.md)
 * [Graphs](data-structure/graphs/README.md)
+  * [Important Code](data-structure/graphs/important-code.md)
   * [Breadth First Search](data-structure/graphs/breadth-first-search.md)
   * [Depth First Search](data-structure/graphs/depth-first-search.md)
   * [DFS vs BFS](data-structure/graphs/dfs-vs-bfs.md)
