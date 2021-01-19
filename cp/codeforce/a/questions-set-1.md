@@ -4,7 +4,7 @@ description: Codeforce A
 
 # Questions \(Set 1\)
 
-### 110A.go
+## 110A.go
 
 ```text
 package main
@@ -60,7 +60,7 @@ func main() {
 }
 ```
 
-### 112A.go
+## 112A.go
 
 ```text
 package main
@@ -97,7 +97,7 @@ func main() {
 }
 ```
 
-### 116A.go
+## 116A.go
 
 ```text
 package main
@@ -124,7 +124,7 @@ func main() {
 }
 ```
 
-### 118A.go
+## 118A.go
 
 ```text
 package main
@@ -155,7 +155,7 @@ func main() {
 }
 ```
 
-### 122A.go
+## 122A.go
 
 ```text
 package main
@@ -180,7 +180,7 @@ func main() {
 }
 ```
 
-### 133A.go
+## 133A.go
 
 ```text
 package main
@@ -208,7 +208,7 @@ func main() {
 }
 ```
 
-### 136A.go
+## 136A.go
 
 ```text
 package main
@@ -245,7 +245,7 @@ func main() {
 }
 ```
 
-### 158A.go
+## 158A.go
 
 ```text
 package main
@@ -287,7 +287,7 @@ func main() {
 }
 ```
 
-### 160A.go
+## 160A.go
 
 ```text
 package main
@@ -322,7 +322,7 @@ func main() {
 }
 ```
 
-### 1A.go
+## 1A.go
 
 ```text
 // doesnt work for bi value, refer to cpp version
@@ -347,7 +347,7 @@ func main() {
 }
 ```
 
-### 231A.go
+## 231A.go
 
 ```text
 package main
@@ -385,7 +385,7 @@ func main(){
 }
 ```
 
-### 236A.go
+## 236A.go
 
 ```text
 package main
@@ -421,7 +421,7 @@ func main() {
 }
 ```
 
-### 263A.go
+## 263A.go
 
 ```text
 package main
@@ -450,7 +450,7 @@ func main() {
 }
 ```
 
-### 266A.go
+## 266A.go
 
 ```text
 package main
@@ -480,7 +480,7 @@ func main() {
 }
 ```
 
-### 271A.go
+## 271A.go
 
 ```text
 package main
@@ -509,7 +509,7 @@ func main() {
 }
 ```
 
-### 281A.go
+## 281A.go
 
 ```text
 package main
@@ -530,7 +530,7 @@ func main() {
 }
 ```
 
-### 282A.go
+## 282A.go
 
 ```text
 package main
@@ -565,7 +565,7 @@ func main() {
 }
 ```
 
-### 339A.go
+## 339A.go
 
 ```text
 package main
@@ -597,7 +597,7 @@ func main() {
 }
 ```
 
-### 41A.go
+## 41A.go
 
 ```text
 package main
@@ -624,7 +624,7 @@ func main() {
 }
 ```
 
-### 4A.go
+## 4A.go
 
 ```text
 package main
@@ -644,7 +644,7 @@ func main() {
 }
 ```
 
-### 58A.go
+## 58A.go
 
 ```text
 package main
@@ -679,7 +679,7 @@ func main() {
 }
 ```
 
-### 59A.go
+## 59A.go
 
 ```text
 package main
@@ -711,7 +711,7 @@ func main() {
 }
 ```
 
-### 69A.go
+## 69A.go
 
 ```text
 package main
@@ -745,7 +745,7 @@ func main() {
 }
 ```
 
-### 71A.go
+## 71A.go
 
 ```text
 package main
@@ -772,7 +772,7 @@ func main() {
 }
 ```
 
-### 96A.go
+## 96A.go
 
 ```text
 package main
@@ -798,7 +798,7 @@ func main() {
 }
 ```
 
-### 1030A.go
+## 1030A.go
 
 ```text
 package main
@@ -833,7 +833,7 @@ func main() {
 }
 ```
 
-### 344A.go
+## 344A.go
 
 ```text
 package main
@@ -872,7 +872,7 @@ func main() {
 }
 ```
 
-### 467A.go
+## 467A.go
 
 ```text
 package main
@@ -904,7 +904,7 @@ func main() {
 }
 ```
 
-### 497A.go
+## 497A.go
 
 ```text
 package main
@@ -935,7 +935,7 @@ func main() {
 }
 ```
 
-### 546A.go
+## 546A.go
 
 ```text
 package main
@@ -961,7 +961,7 @@ func main() {
 }
 ```
 
-### 677A.go
+## 677A.go
 
 ```text
 package main
@@ -1000,7 +1000,7 @@ func main() {
 }
 ```
 
-### 734A.go
+## 734A.go
 
 ```text
 package main
@@ -1042,7 +1042,7 @@ func main() {
 }
 ```
 
-### 791A.go
+## 791A.go
 
 ```text
 package main
@@ -1070,7 +1070,7 @@ func main() {
 }
 ```
 
-### 977A.go
+## 977A.go
 
 ```text
 package main

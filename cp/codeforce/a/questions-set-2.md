@@ -4,7 +4,7 @@ description: Codeforce A
 
 # Questions \(Set 2\)
 
-### 1A.cpp
+## 1A.cpp
 
 ```text
 #include <iostream>
@@ -22,7 +22,7 @@ int main(){
 }
 ```
 
-### 344A.cpp
+## 344A.cpp
 
 ```text
 #include <iostream>
@@ -53,7 +53,7 @@ int main() {
 }
 ```
 
-### 4A.cpp
+## 4A.cpp
 
 ```text
 #include <iostream>
@@ -78,7 +78,7 @@ int main(){
 }
 ```
 
-### 71A.cpp
+## 71A.cpp
 
 ```text
 #include <iostream>

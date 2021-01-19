@@ -4,7 +4,7 @@ description: Codeforce B
 
 # Questions \(Set 1\)
 
-### 158B
+## 158B
 
 ```text
 #include <stdio.h>
@@ -34,10 +34,9 @@ int main()
     printf("%d\n", total);
     return 0;
 }
-
 ```
 
-### 266B
+## 266B
 
 ```text
 #include <iostream>
@@ -65,6 +64,5 @@ int main()
     cout << s << endl;
     return 0;
 }
-
 ```
 

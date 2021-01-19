@@ -4,7 +4,7 @@ description: Leetcode solutions set 1
 
 # Questions \(Set 1\)
 
-### binary-linkedlist.go
+## binary-linkedlist.go
 
 ```text
 import "math"
@@ -26,7 +26,7 @@ func getDecimalValue(head *ListNode) int {
 }
 ```
 
-### consecutive\_char.go
+## consecutive\_char.go
 
 ```text
 func maxPower(s string) int {
@@ -50,7 +50,7 @@ func maxPower(s string) int {
 }
 ```
 
-### create-target-array-in-the-given-order.go
+## create-target-array-in-the-given-order.go
 
 ```text
 func createTargetArray(nums []int, index []int) []int {
@@ -83,7 +83,7 @@ func createTargetArray(nums []int, index []int) []int {
 }
 ```
 
-### decompress-run-length-encoded-list.go
+## decompress-run-length-encoded-list.go
 
 ```text
 func decompressRLElist(nums []int) []int {
@@ -97,7 +97,7 @@ func decompressRLElist(nums []int) []int {
 }
 ```
 
-### defanging-an-ip-address.go
+## defanging-an-ip-address.go
 
 ```text
 func defangIPaddr(address string) string {
@@ -113,7 +113,7 @@ func defangIPaddr(address string) string {
 }
 ```
 
-### duplicate\_zeros.go
+## duplicate\_zeros.go
 
 ```text
 package main
@@ -139,7 +139,7 @@ func main() {
 }
 ```
 
-### duplicateZeros.go
+## duplicateZeros.go
 
 ```text
 func duplicateZeros(arr []int)  {
@@ -156,7 +156,7 @@ func duplicateZeros(arr []int)  {
 }
 ```
 
-### evenSizeNumbers.go
+## evenSizeNumbers.go
 
 ```text
 func findNumbers(nums []int) int {
@@ -180,7 +180,7 @@ func numberOfDigits (num int) int {
 }
 ```
 
-### findMaxCons.go
+## findMaxCons.go
 
 ```text
 func findMaxConsecutiveOnes(nums []int) int {
@@ -204,7 +204,7 @@ func findMaxConsecutiveOnes(nums []int) int {
 }
 ```
 
-### happy-number.go
+## happy-number.go
 
 ```text
 func isHappy(n int) bool {
@@ -234,7 +234,7 @@ func isHappy(n int) bool {
 }
 ```
 
-### how-many-numbers-are-smaller-than-the-current-number.go
+## how-many-numbers-are-smaller-than-the-current-number.go
 
 ```text
 func smallerNumbersThanCurrent(nums []int) []int {
@@ -252,7 +252,7 @@ func smallerNumbersThanCurrent(nums []int) []int {
 }
 ```
 
-### jewels-and-stones.go
+## jewels-and-stones.go
 
 ```text
 func numJewelsInStones(J string, S string) int {
@@ -269,7 +269,7 @@ func numJewelsInStones(J string, S string) int {
 }
 ```
 
-### kids-with-the-greatest-number-of-candies.go
+## kids-with-the-greatest-number-of-candies.go
 
 ```text
 func kidsWithCandies(candies []int, extraCandies int) []bool {
@@ -292,32 +292,32 @@ func kidsWithCandies(candies []int, extraCandies int) []bool {
 }
 ```
 
-### mergeSortedArray.go
+## mergeSortedArray.go
 
 ```text
 // wrong method
 func merge(nums1 []int, m int, nums2 []int, n int) {
-	for m > 0 || n > 0 {
-		if n == 0 {
-			break
-		}
-		if m == 0 {
-			nums1[n-1] = nums2[n-1]
-			n--
-			continue
-		}
-		if nums1[m-1] > nums2[n-1] {
-			nums1[m+n-1] = nums1[m-1]
-			m--
-		} else {
-			nums1[m+n-1] = nums2[n-1]
-			n--
-		}
-	}
+    for m > 0 || n > 0 {
+        if n == 0 {
+            break
+        }
+        if m == 0 {
+            nums1[n-1] = nums2[n-1]
+            n--
+            continue
+        }
+        if nums1[m-1] > nums2[n-1] {
+            nums1[m+n-1] = nums1[m-1]
+            m--
+        } else {
+            nums1[m+n-1] = nums2[n-1]
+            n--
+        }
+    }
 }
 ```
 
-### number-of-good-pairs.go
+## number-of-good-pairs.go
 
 ```text
 func numIdenticalPairs(nums []int) int {
@@ -333,7 +333,7 @@ func numIdenticalPairs(nums []int) int {
 }
 ```
 
-### number-of-steps-to-reduce-a-number-to-zero.go
+## number-of-steps-to-reduce-a-number-to-zero.go
 
 ```text
 func numberOfSteps (num int) int {
@@ -351,7 +351,7 @@ func numberOfSteps (num int) int {
 }
 ```
 
-### removeDuplicate.go
+## removeDuplicate.go
 
 ```text
 func removeDuplicates(nums []int) int {
@@ -366,7 +366,7 @@ func removeDuplicates(nums []int) int {
 }
 ```
 
-### removeElement.go
+## removeElement.go
 
 ```text
 func removeElement(nums []int, val int) int {
@@ -385,7 +385,7 @@ func removeElement(nums []int, val int) int {
 }
 ```
 
-### running-sum-of-1d-array.go
+## running-sum-of-1d-array.go
 
 ```text
 func runningSum(nums []int) []int {
@@ -399,7 +399,7 @@ func runningSum(nums []int) []int {
 }
 ```
 
-### shuffle-string.go
+## shuffle-string.go
 
 ```text
 func restoreString(s string, indices []int) string {
@@ -425,7 +425,7 @@ func restoreString(s string, indices []int) string {
 }
 ```
 
-### shuffle-the-array.go
+## shuffle-the-array.go
 
 ```text
 func shuffle(nums []int, n int) []int {
@@ -439,7 +439,7 @@ func shuffle(nums []int, n int) []int {
 }
 ```
 
-### split-a-string-in-balanced-strings.go
+## split-a-string-in-balanced-strings.go
 
 ```text
 func balancedStringSplit(s string) int {
@@ -462,7 +462,7 @@ func balancedStringSplit(s string) int {
 }
 ```
 
-### squareOfSortedArray.go
+## squareOfSortedArray.go
 
 ```text
 func sortedSquares(A []int) []int {
@@ -495,7 +495,7 @@ func bubblesort(items []int) []int {
 }
 ```
 
-### subtract-the-product-and-sum-of-digits-of-an-integer.go
+## subtract-the-product-and-sum-of-digits-of-an-integer.go
 
 ```text
 func subtractProductAndSum(n int) int {
@@ -510,7 +510,7 @@ func subtractProductAndSum(n int) int {
 }
 ```
 
-### xor-operation-in-an-array.go
+## xor-operation-in-an-array.go
 
 ```text
 func xorOperation(n int, start int) int {
@@ -522,11 +522,7 @@ func xorOperation(n int, start int) int {
 }
 ```
 
-### 
-
 ```text
 
 ```
-
-
 

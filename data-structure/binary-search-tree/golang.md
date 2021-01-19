@@ -4,7 +4,7 @@ description: Linkedlist
 
 # Golang
 
-### breadth-first.go
+## breadth-first.go
 
 ```go
 package main
@@ -67,7 +67,7 @@ func main() {
 }
 ```
 
-### bst.go
+## bst.go
 
 ```go
 package main
@@ -122,7 +122,7 @@ func main() {
 }
 ```
 
-### bsttodll.go
+## bsttodll.go
 
 ```go
 package main
@@ -181,7 +181,7 @@ func newTreeNode(number int) *tree {
 }
 ```
 
-### checkBalance.go
+## checkBalance.go
 
 ```go
 package main
@@ -241,7 +241,7 @@ func main() {
 }
 ```
 
-### child sum property.go
+## child sum property.go
 
 ```go
 package main
@@ -287,7 +287,7 @@ func main() {
 }
 ```
 
-### height-bst.go
+## height-bst.go
 
 ```go
 package main
@@ -341,7 +341,7 @@ func main() {
 }
 ```
 
-### k-distance.go
+## k-distance.go
 
 ```go
 package main
@@ -394,7 +394,7 @@ func main() {
 }
 ```
 
-### leftViewTree.go
+## leftViewTree.go
 
 ```go
 package main
@@ -438,7 +438,7 @@ func main() {
 }
 ```
 
-### line order traversal : go
+## line order traversal : go
 
 ```go
 package main
@@ -505,7 +505,7 @@ func main() {
 }
 ```
 
-### maxValtree.go
+## maxValtree.go
 
 ```go
 package main
@@ -565,7 +565,7 @@ func main() {
 }
 ```
 
-### rightViewtree.go
+## rightViewtree.go
 
 ```go
 package main
@@ -611,7 +611,7 @@ func main() {
 }
 ```
 
-### sizeoftree.go
+## sizeoftree.go
 
 ```go
 package main
@@ -659,126 +659,124 @@ func main() {
 }
 ```
 
-#### Max width of tree
+### Max width of tree
 
 ```go
 package main
 
 import (
-	"fmt"
+    "fmt"
 )
 
 type tree struct {
-	key   int
-	left  *tree
-	right *tree
+    key   int
+    left  *tree
+    right *tree
 }
 
 func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
+    if a > b {
+        return a
+    }
+    return b
 }
 
 func maxwidth(root *tree) int {
-	if root == nil {
-		return 0
-	}
-	l := []*tree{root}
-	result := 0
-	for len(l) != 0 {
-		count := len(l)
-		result = max(count, result)
-		for i := 0; i < count; i++ {
-			temp := l[0]
-			if temp.left != nil {
-				l = append(l, temp.left)
-			}
-			if temp.right != nil {
-				l = append(l, temp.right)
-			}
-			l = l[1:]
-		}
-		fmt.Println(l)
-	}
-	return result
+    if root == nil {
+        return 0
+    }
+    l := []*tree{root}
+    result := 0
+    for len(l) != 0 {
+        count := len(l)
+        result = max(count, result)
+        for i := 0; i < count; i++ {
+            temp := l[0]
+            if temp.left != nil {
+                l = append(l, temp.left)
+            }
+            if temp.right != nil {
+                l = append(l, temp.right)
+            }
+            l = l[1:]
+        }
+        fmt.Println(l)
+    }
+    return result
 }
 
 func main() {
 
-	root := &tree{key: 10, left: nil, right: nil}
-	root.left = &tree{key: 20, left: nil, right: nil}
-	root.left.left = &tree{key: 40, left: nil, right: nil}
-	root.left.right = &tree{key: 50, left: nil, right: nil}
-	root.right = &tree{key: 30, left: nil, right: nil}
-	root.right.left = &tree{key: 60, left: nil, right: nil}
-	// fmt.Println("In-order")
+    root := &tree{key: 10, left: nil, right: nil}
+    root.left = &tree{key: 20, left: nil, right: nil}
+    root.left.left = &tree{key: 40, left: nil, right: nil}
+    root.left.right = &tree{key: 50, left: nil, right: nil}
+    root.right = &tree{key: 30, left: nil, right: nil}
+    root.right.left = &tree{key: 60, left: nil, right: nil}
+    // fmt.Println("In-order")
 
-	fmt.Println(maxwidth(root))
+    fmt.Println(maxwidth(root))
 
 }
-
 ```
 
-### construct tree from pre & in order array of a tree : go
+## construct tree from pre & in order array of a tree : go
 
 ```go
 package main
 
 import (
-	"fmt"
+    "fmt"
 )
 
 type tree struct {
-	key   int
-	left  *tree
-	right *tree
+    key   int
+    left  *tree
+    right *tree
 }
 
 var pre int
 
 func printTreeInorder(root *tree) {
-	if root == nil {
-		return
-	}
-	printTreeInorder(root.left)
-	fmt.Println(root.key)
-	printTreeInorder(root.right)
+    if root == nil {
+        return
+    }
+    printTreeInorder(root.left)
+    fmt.Println(root.key)
+    printTreeInorder(root.right)
 }
 
 func constructTree(inorder []int, preorder []int, start int, end int) *tree {
 
-	if start>end {
-		return nil
-	}
+    if start>end {
+        return nil
+    }
 
-	root := &tree{preorder[pre], nil, nil}
-	pre++
-	index := 0
-	for i := start; i <= end; i++ {
-		if inorder[i] == root.key {
-			index = i
-			break
-		}
-	}
-	root.left = constructTree(inorder, preorder, start, index-1)
-	root.right = constructTree(inorder, preorder, index+1, end)
-	return root
+    root := &tree{preorder[pre], nil, nil}
+    pre++
+    index := 0
+    for i := start; i <= end; i++ {
+        if inorder[i] == root.key {
+            index = i
+            break
+        }
+    }
+    root.left = constructTree(inorder, preorder, start, index-1)
+    root.right = constructTree(inorder, preorder, index+1, end)
+    return root
 
 }
 
 func main() {
 
-	var inorder = []int{4, 2, 5, 1, 3, 8, 7, 9}
-	var preorder = []int{1, 2, 4, 5, 3, 7, 8, 9}
-	node := constructTree(inorder,preorder,0,len(inorder)-1)
-	printTreeInorder(node)
+    var inorder = []int{4, 2, 5, 1, 3, 8, 7, 9}
+    var preorder = []int{1, 2, 4, 5, 3, 7, 8, 9}
+    node := constructTree(inorder,preorder,0,len(inorder)-1)
+    printTreeInorder(node)
 }
-
 ```
 
-### Spiral Tree view : go
+## Spiral Tree view : go
 
 ```go
 package main
@@ -786,66 +784,66 @@ package main
 import "fmt"
 
 type tree struct {
-	key   int
-	left  *tree
-	right *tree
+    key   int
+    left  *tree
+    right *tree
 }
 
 var maxlevel int = 0
 
 func spiralViewTree(root *tree) {
 
-	if root == nil {
-		fmt.Print("Root is nil")
-		return
-	}
+    if root == nil {
+        fmt.Print("Root is nil")
+        return
+    }
 
-	var stack1 = []tree{*root}
-	var stack2 []tree
+    var stack1 = []tree{*root}
+    var stack2 []tree
 
-	for len(stack1) != 0 || len(stack2) != 0 {
-		for len(stack1) != 0 {
-			temp := stack1[0]
-			fmt.Print(temp.key," ")
-			if temp.right != nil {
-				stack2 = append(stack2,*temp.right)
-			}
-			if temp.left != nil {
-				stack2 = append(stack2,*temp.left)
-			}
-			stack1 = stack1[1:]
-		}
-		for len(stack2) != 0 {
-			temp := stack2[0]
-			fmt.Print(temp.key," ")
-			if temp.left != nil {
-				stack2 = append(stack2,*temp.left)
-			}
-			if temp.right != nil {
-				stack2 = append(stack2,*temp.right)
-			}
-			stack2 = stack2[1:]
-		}
-	}
+    for len(stack1) != 0 || len(stack2) != 0 {
+        for len(stack1) != 0 {
+            temp := stack1[0]
+            fmt.Print(temp.key," ")
+            if temp.right != nil {
+                stack2 = append(stack2,*temp.right)
+            }
+            if temp.left != nil {
+                stack2 = append(stack2,*temp.left)
+            }
+            stack1 = stack1[1:]
+        }
+        for len(stack2) != 0 {
+            temp := stack2[0]
+            fmt.Print(temp.key," ")
+            if temp.left != nil {
+                stack2 = append(stack2,*temp.left)
+            }
+            if temp.right != nil {
+                stack2 = append(stack2,*temp.right)
+            }
+            stack2 = stack2[1:]
+        }
+    }
 
 
 }
 
 func main() {
 
-	root := &tree{key: 10, left: nil, right: nil}
-	root.left = &tree{key: 20, left: nil, right: nil}
-	root.right = &tree{key: 30, left: nil, right: nil}
-	root.right.right = &tree{key: 40, left: nil, right: nil}
-	root.right.right.right = &tree{key: 50, left: nil, right: nil}
-	root.right.right.right.right = &tree{key: 60, left: nil, right: nil}
+    root := &tree{key: 10, left: nil, right: nil}
+    root.left = &tree{key: 20, left: nil, right: nil}
+    root.right = &tree{key: 30, left: nil, right: nil}
+    root.right.right = &tree{key: 40, left: nil, right: nil}
+    root.right.right.right = &tree{key: 50, left: nil, right: nil}
+    root.right.right.right.right = &tree{key: 60, left: nil, right: nil}
 
-	spiralViewTree(root)
+    spiralViewTree(root)
 
 }
 ```
 
-### Diameter of Tree : go
+## Diameter of Tree : go
 
 ```go
 package main
@@ -853,46 +851,46 @@ package main
 import "fmt"
 
 type tree struct {
-	key   int
-	left  *tree
-	right *tree
+    key   int
+    left  *tree
+    right *tree
 }
 
 var result int
 
 func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
+    if a > b {
+        return a
+    }
+    return b
 }
 
 func diameterOfTree(root *tree) int {
 
-	if root == nil {
-		return 0
-	}
-	lh := diameterOfTree(root.left)
-	rh := diameterOfTree(root.right)
+    if root == nil {
+        return 0
+    }
+    lh := diameterOfTree(root.left)
+    rh := diameterOfTree(root.right)
 
-	result = max(result, 1+lh+rh)
-	return 1 + max(lh, rh)
+    result = max(result, 1+lh+rh)
+    return 1 + max(lh, rh)
 
 }
 
 func main() {
-	root := &tree{key: 10, left: nil, right: nil}
-	root.left = &tree{key: 20, left: nil, right: nil}
-	root.right = &tree{key: 30, left: nil, right: nil}
-	root.right.right = &tree{key: 40, left: nil, right: nil}
-	root.right.right.right = &tree{key: 50, left: nil, right: nil}
-	root.right.right.right.right = &tree{key: 60, left: nil, right: nil}
+    root := &tree{key: 10, left: nil, right: nil}
+    root.left = &tree{key: 20, left: nil, right: nil}
+    root.right = &tree{key: 30, left: nil, right: nil}
+    root.right.right = &tree{key: 40, left: nil, right: nil}
+    root.right.right.right = &tree{key: 50, left: nil, right: nil}
+    root.right.right.right.right = &tree{key: 60, left: nil, right: nil}
 
-	fmt.Println(diameterOfTree(root))
+    fmt.Println(diameterOfTree(root))
 }
 ```
 
-### Lowest common acestor : go
+## Lowest common acestor : go
 
 ```go
 package main
@@ -900,93 +898,93 @@ package main
 import "fmt"
 
 type tree struct {
-	key   int
-	left  *tree
-	right *tree
+    key   int
+    left  *tree
+    right *tree
 }
 
 func lca(root *tree,x,y int) *tree {
-	if root == nil {
-		return nil
-	}
-	if root.key == x || root.key == y {
-		return root
-	}
-	lca1 := lca(root.left,x,y)
-	lca2 := lca(root.right,x,y)
+    if root == nil {
+        return nil
+    }
+    if root.key == x || root.key == y {
+        return root
+    }
+    lca1 := lca(root.left,x,y)
+    lca2 := lca(root.right,x,y)
 
-	if lca1 != nil && lca2 != nil {
-		return root
-	}
-	if lca1 != nil {
-		return lca1
-	} else {
-		return lca2
-	}
+    if lca1 != nil && lca2 != nil {
+        return root
+    }
+    if lca1 != nil {
+        return lca1
+    } else {
+        return lca2
+    }
 }
 
 
 func main() {
-	root := &tree{key: 10, left: nil, right: nil}
-	root.left = &tree{key: 20, left: nil, right: nil}
-	root.right = &tree{key: 30, left: nil, right: nil}
-	root.right.right = &tree{key: 40, left: nil, right: nil}
-	root.right.left = &tree{key: 43, left: nil, right: nil}
-	root.right.right.right = &tree{key: 50, left: nil, right: nil}
-	root.right.right.left = &tree{key: 60, left: nil, right: nil}
-	fmt.Println(lca(root,40,50))
+    root := &tree{key: 10, left: nil, right: nil}
+    root.left = &tree{key: 20, left: nil, right: nil}
+    root.right = &tree{key: 30, left: nil, right: nil}
+    root.right.right = &tree{key: 40, left: nil, right: nil}
+    root.right.left = &tree{key: 43, left: nil, right: nil}
+    root.right.right.right = &tree{key: 50, left: nil, right: nil}
+    root.right.right.left = &tree{key: 60, left: nil, right: nil}
+    fmt.Println(lca(root,40,50))
 }
 ```
 
-### Count nodes in go
+## Count nodes in go
 
 ```go
 package main
 
 import (
-	"fmt"
-	"math"
+    "fmt"
+    "math"
 )
 
 type tree struct {
-	key   int
-	left  *tree
-	right *tree
+    key   int
+    left  *tree
+    right *tree
 }
 
 func countNode(root *tree) int {
 
-	lh,rh := 0,0
-	temp := root
-	for temp != nil {
-		lh++
-		temp = temp.left
-	}
-	temp = root
-	for temp!=nil {
-		rh++
-		temp = temp.right
-	}
-	if lh == rh {
-		return int(math.Pow(2,float64(lh))-1)
-	}
-	return 1+countNode(root.left)+countNode(root.right)
+    lh,rh := 0,0
+    temp := root
+    for temp != nil {
+        lh++
+        temp = temp.left
+    }
+    temp = root
+    for temp!=nil {
+        rh++
+        temp = temp.right
+    }
+    if lh == rh {
+        return int(math.Pow(2,float64(lh))-1)
+    }
+    return 1+countNode(root.left)+countNode(root.right)
 
 }
 
 func main() {
-	root := &tree{key: 10, left: nil, right: nil}
-	root.left = &tree{key: 20, left: nil, right: nil}
-	root.right = &tree{key: 30, left: nil, right: nil}
-	root.right.right = &tree{key: 40, left: nil, right: nil}
-	root.right.left = &tree{key: 43, left: nil, right: nil}
-	root.right.right.right = &tree{key: 50, left: nil, right: nil}
-	root.right.right.left = &tree{key: 60, left: nil, right: nil}
-	fmt.Println(countNode(root))
+    root := &tree{key: 10, left: nil, right: nil}
+    root.left = &tree{key: 20, left: nil, right: nil}
+    root.right = &tree{key: 30, left: nil, right: nil}
+    root.right.right = &tree{key: 40, left: nil, right: nil}
+    root.right.left = &tree{key: 43, left: nil, right: nil}
+    root.right.right.right = &tree{key: 50, left: nil, right: nil}
+    root.right.right.left = &tree{key: 60, left: nil, right: nil}
+    fmt.Println(countNode(root))
 }
 ```
 
-### Serialize and deserialize in go 
+## Serialize and deserialize in go
 
 ```go
 package main
@@ -994,63 +992,61 @@ package main
 import "fmt"
 
 type tree struct {
-	key   int
-	left  *tree
-	right *tree
+    key   int
+    left  *tree
+    right *tree
 }
 
 var arr []int
 var index int
 
 func inorder(root *tree ) {
-	if root == nil {
-		return
-	}
-	fmt.Println(root.key)
-	inorder(root.left)
-	inorder(root.right)
+    if root == nil {
+        return
+    }
+    fmt.Println(root.key)
+    inorder(root.left)
+    inorder(root.right)
 }
 
 func serialize(root *tree) {
-	if root == nil {
-		arr = append(arr,-1)
-		return
-	}
-	arr = append(arr,root.key)
-	serialize(root.left)
-	serialize(root.right)
+    if root == nil {
+        arr = append(arr,-1)
+        return
+    }
+    arr = append(arr,root.key)
+    serialize(root.left)
+    serialize(root.right)
 }
 
 func deserialize(arr []int) *tree {
-	if len(arr) == index {
-		return nil
-	}
-	temp := arr[index]
-	index++
-	if temp == -1 {
-		return nil
-	}
-	node := &tree{temp,nil,nil}
-	node.left = deserialize(arr)
-	node.right = deserialize(arr)
-	return node
+    if len(arr) == index {
+        return nil
+    }
+    temp := arr[index]
+    index++
+    if temp == -1 {
+        return nil
+    }
+    node := &tree{temp,nil,nil}
+    node.left = deserialize(arr)
+    node.right = deserialize(arr)
+    return node
 }
 
 func main() {
-	root := &tree{key: 10, left: nil, right: nil}
-	root.left = &tree{key: 20, left: nil, right: nil}
-	root.right = &tree{key: 30, left: nil, right: nil}
-	root.right.right = &tree{key: 40, left: nil, right: nil}
-	root.right.left = &tree{key: 43, left: nil, right: nil}
-	root.right.right.right = &tree{key: 50, left: nil, right: nil}
-	root.right.right.left = &tree{key: 60, left: nil, right: nil}
-	serialize(root)
-	index = 0
-	fmt.Println(arr)
-	head := deserialize(arr)
-	inorder(head)
+    root := &tree{key: 10, left: nil, right: nil}
+    root.left = &tree{key: 20, left: nil, right: nil}
+    root.right = &tree{key: 30, left: nil, right: nil}
+    root.right.right = &tree{key: 40, left: nil, right: nil}
+    root.right.left = &tree{key: 43, left: nil, right: nil}
+    root.right.right.right = &tree{key: 50, left: nil, right: nil}
+    root.right.right.left = &tree{key: 60, left: nil, right: nil}
+    serialize(root)
+    index = 0
+    fmt.Println(arr)
+    head := deserialize(arr)
+    inorder(head)
 }
 ```
-
-
 

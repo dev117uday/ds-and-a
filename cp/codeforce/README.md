@@ -9,5 +9,3 @@ description: Questions Solved on Codeforce
 - A
 ```
 
-
-

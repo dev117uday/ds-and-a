@@ -4,7 +4,7 @@ description: Linkedlist
 
 # C++
 
-### circular-linkedlist.cpp
+## circular-linkedlist.cpp
 
 ```cpp
 #include <iostream>
@@ -57,7 +57,7 @@ int main(){
 }
 ```
 
-### double-linked-list.cpp
+## double-linked-list.cpp
 
 ```cpp
 #include <iostream>
@@ -132,7 +132,7 @@ int main()
 }
 ```
 
-### linkedlist.cpp
+## linkedlist.cpp
 
 ```cpp
 #include <iostream>

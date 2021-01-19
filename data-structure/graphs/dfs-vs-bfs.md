@@ -4,7 +4,7 @@ description: Fight Fight Fight
 
 # DFS vs BFS
 
-### Applications of Breadth First Search
+## Applications of Breadth First Search
 
 * Shortest Path in unweighted graph
 * Crawler in Search Engine
@@ -15,14 +15,10 @@ description: Fight Fight Fight
 * Ford Fulkerson Algorithm
 * Broadcasting
 
-### Applications of Depth First Search
+## Applications of Depth First Search
 
 * Cycle Detection
 * Topological Sorting
 * Solving Maze and Puzzle Problems
 * Path Finding
-
-
-
-
 

@@ -4,7 +4,7 @@ description: Linkedlist
 
 # C++
 
-### biggest\_element.cpp 
+## biggest\_element.cpp
 
 ```cpp
 #include <iostream>
@@ -51,7 +51,7 @@ int main(){
 }
 ```
 
-### get\_size.cpp
+## get\_size.cpp
 
 ```cpp
 #include <iostream>
@@ -84,7 +84,7 @@ int main(){
 }
 ```
 
-### height\_bst.cpp
+## height\_bst.cpp
 
 ```cpp
 #include <iostream>
@@ -125,7 +125,7 @@ int main(){
 }
 ```
 
-### transversal.cpp
+## transversal.cpp
 
 ```cpp
 #include <iostream>
