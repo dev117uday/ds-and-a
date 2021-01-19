@@ -2,9 +2,10 @@
 
 * [Data Structures & Algorithms](README.md)
 
-## Maths
+## Concepts <a id="maths"></a>
 
-* [Mathematics - 1](maths/mathematics.md)
+* [Theory](maths/theory.md)
+* [Mathematics](maths/mathematics.md)
 
 ## CP
 
@@ -31,6 +32,7 @@
   * [C++](data-structure/linkedlist/c++.md)
 * [Binary Search Tree](data-structure/binary-search-tree-1.md)
 * [Graphs](data-structure/graphs/README.md)
+  * [Important Code](data-structure/graphs/important-code.md)
   * [Breadth First Search](data-structure/graphs/breadth-first-search.md)
   * [Depth First Search](data-structure/graphs/depth-first-search.md)
   * [DFS vs BFS](data-structure/graphs/dfs-vs-bfs.md)
@@ -43,5 +45,8 @@
 
 ## Algorithms <a id="named"></a>
 
+* [Recursion](named/recursion.md)
 * [Sorting](named/sorting.md)
+* [Named Algorithms](named/named-algorithms/README.md)
+  * [Untitled](named/named-algorithms/untitled.md)
 

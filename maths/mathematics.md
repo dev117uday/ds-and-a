@@ -2,7 +2,7 @@
 description: Mathematical Questions
 ---
 
-# Mathematics - 1
+# Mathematics
 
 ## Basic Maths
 
@@ -33,7 +33,7 @@ $$
 
 ### Number of Digits in a number \(iteratively\)
 
-```text
+```go
 package main
 
 import "fmt"
@@ -53,7 +53,7 @@ func main() {
 
 ### Number of Digits in a number \(recursively\)
 
-```text
+```go
 package main
 
 import "fmt"
@@ -75,7 +75,7 @@ func main() {
 
 ### Number of Digits in a number \(mathematically\)
 
-```text
+```go
 package main
 
 import (
@@ -94,9 +94,8 @@ func main() {
 
 ## Greatest C Divisor or Highest C Factor \( GCD\|HCF \)
 
-Go :
 
-```text
+```go
 package main
 
 import (
@@ -118,9 +117,9 @@ func main() {
 
 ## First N Prime
 
-Go :
 
-```text
+```go
+
 package main
 
 import (
