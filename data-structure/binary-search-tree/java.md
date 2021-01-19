@@ -4,7 +4,7 @@ description: Linkedlist
 
 # Java
 
-### Level order traversal
+## Level order traversal
 
 ```java
 import java.util.LinkedList;
@@ -67,7 +67,7 @@ class Program {
 }
 ```
 
-### Max width tree
+## Max width tree
 
 ```java
 import java.util.LinkedList;
@@ -128,7 +128,7 @@ class Program {
 }
 ```
 
-### binary tree to doubly linkedlist
+## binary tree to doubly linkedlist
 
 ```java
 class tree {
@@ -192,7 +192,7 @@ class Program {
 }
 ```
 
-### Construct tree from inorder
+## Construct tree from inorder
 
 ```java
 import java.util.*;
@@ -250,7 +250,7 @@ class GFG {
 }
 ```
 
-### Spriral Tree
+## Spriral Tree
 
 ```java
 import java.util.*;
@@ -320,7 +320,7 @@ class GFG {
 }
 ```
 
-### Diameter of binary tree of max distance from two nodes
+## Diameter of binary tree of max distance from two nodes
 
 ```java
 import java.util.*;
@@ -367,7 +367,7 @@ class GFG {
 }
 ```
 
-### Lowest Comman Acestor
+## Lowest Comman Acestor
 
 ```java
 import java.util.*;
@@ -419,7 +419,7 @@ class GFG {
 }
 ```
 
-### Burn a Binary Tree from a Leaf
+## Burn a Binary Tree from a Leaf
 
 ```java
 import java.util.*;
@@ -481,7 +481,7 @@ class GFG {
 }
 ```
 
-### Count nodes in a Complete Binary Tree
+## Count nodes in a Complete Binary Tree
 
 ```java
 import java.util.*;
@@ -521,7 +521,7 @@ class GFG {
 }
 ```
 
-### De-Serialize tree
+## De-Serialize tree
 
 ```java
 import java.util.*;
@@ -594,7 +594,7 @@ class GFG {
 }
 ```
 
-### Serialize binary tree
+## Serialize binary tree
 
 ```java
 import java.util.*;
@@ -640,103 +640,101 @@ class GFG {
 }
 ```
 
-### Inorder iteratively
+## Inorder iteratively
 
 ```java
 import java.util.Stack;
 
 class Tree {
-	int key;
-	Tree left;
-	Tree right;
+    int key;
+    Tree left;
+    Tree right;
 
-	Tree(int key) {
-		this.key = key;
-		left = null;
-		right = null;
-	}
+    Tree(int key) {
+        this.key = key;
+        left = null;
+        right = null;
+    }
 }
 
 class Program {
 
-	static void iterInorder(Tree root) {
+    static void iterInorder(Tree root) {
 
-		Stack<Tree> stack = new Stack<Tree>();
-		Tree curr = root;
-		while (curr != null || stack.isEmpty() == false) {
-			while (curr != null) {
-				stack.push(curr);
-				curr = curr.left;
-			}
-			curr = stack.pop();
-			System.out.println(curr.key);
-			curr = curr.right;
-		}
-	}
+        Stack<Tree> stack = new Stack<Tree>();
+        Tree curr = root;
+        while (curr != null || stack.isEmpty() == false) {
+            while (curr != null) {
+                stack.push(curr);
+                curr = curr.left;
+            }
+            curr = stack.pop();
+            System.out.println(curr.key);
+            curr = curr.right;
+        }
+    }
 
-	public static void main(String[] args) {
-		Tree first = new Tree(10);
-		first.left = new Tree(20);
-		first.right = new Tree(30);
-		first.left.left = new Tree(40);
-		first.left.right = new Tree(50);
-		first.right.left = new Tree(60);
-		first.right.right = new Tree(70);
-		iterInorder(first);
-	}
+    public static void main(String[] args) {
+        Tree first = new Tree(10);
+        first.left = new Tree(20);
+        first.right = new Tree(30);
+        first.left.left = new Tree(40);
+        first.left.right = new Tree(50);
+        first.right.left = new Tree(60);
+        first.right.right = new Tree(70);
+        iterInorder(first);
+    }
 }
 ```
 
-### Preorder iteratively
+## Preorder iteratively
 
 ```java
 import java.util.Stack;
 
 class Tree {
-	int key;
-	Tree left;
-	Tree right;
+    int key;
+    Tree left;
+    Tree right;
 
-	Tree(int key) {
-		this.key = key;
-		left = null;
-		right = null;
-	}
+    Tree(int key) {
+        this.key = key;
+        left = null;
+        right = null;
+    }
 }
 
 class Program {
 
-	static void iterativePreorder(Tree root) {
-		if (root == null) {
-			return;
-		}
-		Stack<Tree> TreeStack = new Stack<Tree>();
-		TreeStack.push(root);
-		while (TreeStack.empty() == false) {
-			Tree myTree = TreeStack.peek();
-			System.out.print(myTree.key + " ");
-			TreeStack.pop();
-			if (myTree.right != null) {
-				TreeStack.push(myTree.right);
-			}
-			if (myTree.left != null) {
-				TreeStack.push(myTree.left);
-			}
-		}
-	}
+    static void iterativePreorder(Tree root) {
+        if (root == null) {
+            return;
+        }
+        Stack<Tree> TreeStack = new Stack<Tree>();
+        TreeStack.push(root);
+        while (TreeStack.empty() == false) {
+            Tree myTree = TreeStack.peek();
+            System.out.print(myTree.key + " ");
+            TreeStack.pop();
+            if (myTree.right != null) {
+                TreeStack.push(myTree.right);
+            }
+            if (myTree.left != null) {
+                TreeStack.push(myTree.left);
+            }
+        }
+    }
 
-	public static void main(String[] args) {
-		Tree first = new Tree(10);
-		first.left = new Tree(20);
-		first.right = new Tree(30);
-		first.left.left = new Tree(40);
-		first.left.right = new Tree(50);
-		first.right.left = new Tree(60);
-		first.right.right = new Tree(70);
-		iterativePreorder(first);
-	}
+    public static void main(String[] args) {
+        Tree first = new Tree(10);
+        first.left = new Tree(20);
+        first.right = new Tree(30);
+        first.left.left = new Tree(40);
+        first.left.right = new Tree(50);
+        first.right.left = new Tree(60);
+        first.right.right = new Tree(70);
+        iterativePreorder(first);
+    }
 }
 ```
-
-
 

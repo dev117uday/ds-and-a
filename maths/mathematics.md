@@ -4,15 +4,15 @@ description: Mathematical Questions
 
 # Mathematics - 1
 
-### Basic Maths
+## Basic Maths
 
-#### Sum of AP
+### Sum of AP
 
 $$
 sum = n/2*(2a+(n-1)d
 $$
 
-#### Sum of GP
+### Sum of GP
 
 $$
 sum of GP = a(1-r^n)/1-r
@@ -20,18 +20,18 @@ $$
 
 **Mean :** sum of all numbers divided by number of numbers
 
-**Median** : 
+**Median** :
 
 * For odd number of numbers : middle number 
 * For even number of numbers : = \(mean\_of\_2\_middle anumbers\)/2
 
-**LCM**  
+**LCM**
 
 ![\mathrm {lcm} \(a,b\) = \frac {\|a \cdot b\|}{gcd \(a,b\)}](https://www.gstatic.com/education/formulas2/-1/en/greatest_common_divisor.svg)
 
-### Number of Digits
+## Number of Digits
 
-#### Number of Digits in a number \(iteratively\)
+### Number of Digits in a number \(iteratively\)
 
 ```text
 package main
@@ -51,7 +51,7 @@ func main() {
 }
 ```
 
-#### Number of Digits in a number \(recursively\)
+### Number of Digits in a number \(recursively\)
 
 ```text
 package main
@@ -73,7 +73,7 @@ func main() {
 }
 ```
 
-#### Number of Digits in a number \(mathematically\)
+### Number of Digits in a number \(mathematically\)
 
 ```text
 package main
@@ -92,65 +92,65 @@ func main() {
 }
 ```
 
-### Greatest C Divisor or Highest C Factor \( GCD\|HCF \)
+## Greatest C Divisor or Highest C Factor \( GCD\|HCF \)
 
-Go : 
+Go :
 
 ```text
 package main
 
 import (
-	"fmt"
+    "fmt"
 )
 
 func gcd(m int, n int) int {
 
-	if m == 0 {
-		return n
-	}
-	return gcd(n%m, m)
+    if m == 0 {
+        return n
+    }
+    return gcd(n%m, m)
 }
 
 func main() {
-	fmt.Println(gcd(28, 8))
+    fmt.Println(gcd(28, 8))
 }
 ```
 
-### First N Prime
+## First N Prime
 
-Go : 
+Go :
 
 ```text
 package main
 
 import (
-	"fmt"
+    "fmt"
 )
 
 func firstNprime(number int) []int {
 
-	var array []int
-	for i := 1; i <= number; i++ {
-		if i == 1 {
-			continue
-		}
-		flag := 0
-		for j := 2; j <= i/2; j++ {
-			if i%j == 0 {
-				flag = 1
-				break
-			}
-		}
-		if flag == 0 {
-			array = append(array, i)
-		}
-	}
-	return array
+    var array []int
+    for i := 1; i <= number; i++ {
+        if i == 1 {
+            continue
+        }
+        flag := 0
+        for j := 2; j <= i/2; j++ {
+            if i%j == 0 {
+                flag = 1
+                break
+            }
+        }
+        if flag == 0 {
+            array = append(array, i)
+        }
+    }
+    return array
 
 }
 
 func main() {
-	fmt.Println(firstNprime(100))
+    fmt.Println(firstNprime(100))
 }
 ```
 

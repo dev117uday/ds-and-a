@@ -7,5 +7,3 @@ Leet Code Question Solutions
 - Question set 2
 ```
 
-
-

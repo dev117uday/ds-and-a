@@ -4,5 +4,3 @@
 - 30 days of hackerrank
 ```
 
-
-

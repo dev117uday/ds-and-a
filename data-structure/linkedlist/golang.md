@@ -4,7 +4,7 @@ description: Linkedlist
 
 # Golang
 
-### circularlinkedlist.go
+## circularlinkedlist.go
 
 ```go
 package main
@@ -57,7 +57,7 @@ func main() {
 }
 ```
 
-### doublylinkedlist.go
+## doublylinkedlist.go
 
 ```go
 package main
@@ -122,7 +122,7 @@ func main() {
 }
 ```
 
-### falling\_linkedlist.go
+## falling\_linkedlist.go
 
 ```go
 package main
@@ -164,7 +164,7 @@ func main(){
 }
 ```
 
-### linkedlist.go
+## linkedlist.go
 
 ```go
 package main
@@ -259,7 +259,7 @@ func (L *List) attach(number int) {
 }
 ```
 
-### list.go
+## list.go
 
 ```go
 package linkedlist

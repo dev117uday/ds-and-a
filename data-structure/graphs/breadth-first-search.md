@@ -1,198 +1,193 @@
 # Breadth First Search
 
-### Breadth First Search
+## Breadth First Search
 
 ```java
 import java.util.*; 
 
 class Graph { 
 
-	static void addEdge(ArrayList<ArrayList<Integer>> adj, int u, int v) 
-	{ 
-		adj.get(u).add(v); 
-		adj.get(v).add(u); 
-	} 
+    static void addEdge(ArrayList<ArrayList<Integer>> adj, int u, int v) 
+    { 
+        adj.get(u).add(v); 
+        adj.get(v).add(u); 
+    } 
 
-	static void BFS(ArrayList<ArrayList<Integer>> adj,int V,int s) 
-	{ 
-		boolean[] visited=new boolean[V]; 
-    	for(int i = 0; i < V; i++) 
-    		visited[i] = false; 
-    
-    	Queue<Integer> q=new LinkedList<>();
-    	
-    	visited[s] = true; 
-    	q.add(s); 
-    
-    	while(q.isEmpty()==false) 
-    	{ 
-    		int u = q.poll(); 
-    		System.out.print(u + " "); 
-    		 
-    		for(int v:adj.get(u)){
-    		    if(visited[v]==false){
-    		        visited[v]=true;
-    		        q.add(v);
-    		    }
-    		} 
-    	} 
-	} 
+    static void BFS(ArrayList<ArrayList<Integer>> adj,int V,int s) 
+    { 
+        boolean[] visited=new boolean[V]; 
+        for(int i = 0; i < V; i++) 
+            visited[i] = false; 
 
-	public static void main(String[] args) 
-	{  
-		int V = 5; 
-		ArrayList<ArrayList<Integer> > adj = new ArrayList<ArrayList<Integer>>(V); 
-		
-		for (int i = 0; i < V; i++) 
-			adj.add(new ArrayList<Integer>()); 
+        Queue<Integer> q=new LinkedList<>();
 
-		addEdge(adj,0,1); 
-    	addEdge(adj,0,2); 
-    	addEdge(adj,1,2); 
-    	addEdge(adj,2,3); 
-    	addEdge(adj,1,3);
-    	addEdge(adj,3,4);
-    	addEdge(adj,2,4);
-		
-		System.out.println("Following is Breadth First Traversal: "); 
-	    BFS(adj,V,0);
-	} 
-} 
+        visited[s] = true; 
+        q.add(s); 
 
+        while(q.isEmpty()==false) 
+        { 
+            int u = q.poll(); 
+            System.out.print(u + " "); 
+
+            for(int v:adj.get(u)){
+                if(visited[v]==false){
+                    visited[v]=true;
+                    q.add(v);
+                }
+            } 
+        } 
+    } 
+
+    public static void main(String[] args) 
+    {  
+        int V = 5; 
+        ArrayList<ArrayList<Integer> > adj = new ArrayList<ArrayList<Integer>>(V); 
+
+        for (int i = 0; i < V; i++) 
+            adj.add(new ArrayList<Integer>()); 
+
+        addEdge(adj,0,1); 
+        addEdge(adj,0,2); 
+        addEdge(adj,1,2); 
+        addEdge(adj,2,3); 
+        addEdge(adj,1,3);
+        addEdge(adj,3,4);
+        addEdge(adj,2,4);
+
+        System.out.println("Following is Breadth First Traversal: "); 
+        BFS(adj,V,0);
+    } 
+}
 ```
 
-### Breadth First saerch Disconnected graph
+## Breadth First saerch Disconnected graph
 
 ```java
 import java.util.*; 
 
 class Graph { 
 
-	static void addEdge(ArrayList<ArrayList<Integer>> adj, int u, int v) 
-	{ 
-		adj.get(u).add(v); 
-		adj.get(v).add(u); 
-	} 
+    static void addEdge(ArrayList<ArrayList<Integer>> adj, int u, int v) 
+    { 
+        adj.get(u).add(v); 
+        adj.get(v).add(u); 
+    } 
 
-	static void BFS(ArrayList<ArrayList<Integer>> adj,int s, boolean[] visited) 
-	{ 
-    	Queue<Integer> q=new LinkedList<>();
-    	
-    	visited[s] = true; 
-    	q.add(s); 
-    
-    	while(q.isEmpty()==false) 
-    	{ 
-    		int u = q.poll(); 
-    		System.out.print(u + " "); 
-    		 
-    		for(int v:adj.get(u)){
-    		    if(visited[v]==false){
-    		        visited[v]=true;
-    		        q.add(v);
-    		    }
-    		} 
-    	} 
-	} 
-	
-	static void BFSDin(ArrayList<ArrayList<Integer>> adj, int V){
-	    boolean[] visited=new boolean[V]; 
-    	for(int i = 0; i < V; i++) 
-    		visited[i] = false;
-    	for(int i=0;i<V;i++){
+    static void BFS(ArrayList<ArrayList<Integer>> adj,int s, boolean[] visited) 
+    { 
+        Queue<Integer> q=new LinkedList<>();
+
+        visited[s] = true; 
+        q.add(s); 
+
+        while(q.isEmpty()==false) 
+        { 
+            int u = q.poll(); 
+            System.out.print(u + " "); 
+
+            for(int v:adj.get(u)){
+                if(visited[v]==false){
+                    visited[v]=true;
+                    q.add(v);
+                }
+            } 
+        } 
+    } 
+
+    static void BFSDin(ArrayList<ArrayList<Integer>> adj, int V){
+        boolean[] visited=new boolean[V]; 
+        for(int i = 0; i < V; i++) 
+            visited[i] = false;
+        for(int i=0;i<V;i++){
             if(visited[i]==false)
                 BFS(adj,i,visited);
         }
-	}
+    }
 
-	public static void main(String[] args) 
-	{  
-		int V = 7; 
-		ArrayList<ArrayList<Integer> > adj = new ArrayList<ArrayList<Integer>>(V); 
-		
-		for (int i = 0; i < V; i++) 
-			adj.add(new ArrayList<Integer>()); 
+    public static void main(String[] args) 
+    {  
+        int V = 7; 
+        ArrayList<ArrayList<Integer> > adj = new ArrayList<ArrayList<Integer>>(V); 
 
-			addEdge(adj,0,1); 
-        	addEdge(adj,0,2); 
-        	addEdge(adj,2,3); 
-        	addEdge(adj,1,3); 
-        	addEdge(adj,4,5);
-        	addEdge(adj,5,6);
-        	addEdge(adj,4,6);
-		
-		System.out.println("Following is Breadth First Traversal: "); 
-	    BFSDin(adj,V);
-	} 
-} 
+        for (int i = 0; i < V; i++) 
+            adj.add(new ArrayList<Integer>()); 
 
+            addEdge(adj,0,1); 
+            addEdge(adj,0,2); 
+            addEdge(adj,2,3); 
+            addEdge(adj,1,3); 
+            addEdge(adj,4,5);
+            addEdge(adj,5,6);
+            addEdge(adj,4,6);
+
+        System.out.println("Following is Breadth First Traversal: "); 
+        BFSDin(adj,V);
+    } 
+}
 ```
 
-### Number of disconnected graphs/ Number of Island problem
+## Number of disconnected graphs/ Number of Island problem
 
 ```java
 import java.util.*; 
 
 class Graph { 
 
-	static void addEdge(ArrayList<ArrayList<Integer>> adj, int u, int v) 
-	{ 
-		adj.get(u).add(v); 
-		adj.get(v).add(u); 
-	} 
+    static void addEdge(ArrayList<ArrayList<Integer>> adj, int u, int v) 
+    { 
+        adj.get(u).add(v); 
+        adj.get(v).add(u); 
+    } 
 
-	static void BFS(ArrayList<ArrayList<Integer>> adj,int s, boolean[] visited) 
-	{ 
-    	Queue<Integer> q=new LinkedList<>();
-    	
-    	visited[s] = true; 
-    	q.add(s); 
-    
-    	while(q.isEmpty()==false) 
-    	{ 
-    		int u = q.poll(); 
-    		 
-    		for(int v:adj.get(u)){
-    		    if(visited[v]==false){
-    		        visited[v]=true;
-    		        q.add(v);
-    		    }
-    		} 
-    	} 
-	} 
-	
-	static int BFSDin(ArrayList<ArrayList<Integer>> adj, int V){
-	    boolean[] visited=new boolean[V];int count=0; 
-    	for(int i = 0; i < V; i++) 
-    		visited[i] = false;
-    	for(int i=0;i<V;i++){
+    static void BFS(ArrayList<ArrayList<Integer>> adj,int s, boolean[] visited) 
+    { 
+        Queue<Integer> q=new LinkedList<>();
+
+        visited[s] = true; 
+        q.add(s); 
+
+        while(q.isEmpty()==false) 
+        { 
+            int u = q.poll(); 
+
+            for(int v:adj.get(u)){
+                if(visited[v]==false){
+                    visited[v]=true;
+                    q.add(v);
+                }
+            } 
+        } 
+    } 
+
+    static int BFSDin(ArrayList<ArrayList<Integer>> adj, int V){
+        boolean[] visited=new boolean[V];int count=0; 
+        for(int i = 0; i < V; i++) 
+            visited[i] = false;
+        for(int i=0;i<V;i++){
             if(visited[i]==false)
                 {BFS(adj,i,visited);count++;}
         }
         return count;
-	}
+    }
 
-	public static void main(String[] args) 
-	{  
-		int V = 7; 
-		ArrayList<ArrayList<Integer> > adj = new ArrayList<ArrayList<Integer>>(V); 
-		
-		for (int i = 0; i < V; i++) 
-			adj.add(new ArrayList<Integer>()); 
+    public static void main(String[] args) 
+    {  
+        int V = 7; 
+        ArrayList<ArrayList<Integer> > adj = new ArrayList<ArrayList<Integer>>(V); 
 
-			addEdge(adj,0,1); 
-        	addEdge(adj,0,2); 
-        	addEdge(adj,2,3); 
-        	addEdge(adj,1,3); 
-        	addEdge(adj,4,5);
-        	addEdge(adj,5,6);
-        	addEdge(adj,4,6);
-		
-		System.out.print("Number of islands: "+BFSDin(adj,V)); 
-	} 
-} 
+        for (int i = 0; i < V; i++) 
+            adj.add(new ArrayList<Integer>()); 
 
+            addEdge(adj,0,1); 
+            addEdge(adj,0,2); 
+            addEdge(adj,2,3); 
+            addEdge(adj,1,3); 
+            addEdge(adj,4,5);
+            addEdge(adj,5,6);
+            addEdge(adj,4,6);
+
+        System.out.print("Number of islands: "+BFSDin(adj,V)); 
+    } 
+}
 ```
-
-
 

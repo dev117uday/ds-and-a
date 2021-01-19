@@ -4,7 +4,7 @@ description: 30 days challenge hackerrank
 
 # 30 days of Code
 
-### day\_01.go
+## day\_01.go
 
 ```text
 package main
@@ -27,7 +27,7 @@ func main() {
 }
 ```
 
-### day\_02.go
+## day\_02.go
 
 ```text
 package main
@@ -67,7 +67,7 @@ func main() {
 }
 ```
 
-### day\_03.go
+## day\_03.go
 
 ```text
 package main
@@ -127,7 +127,7 @@ func checkError(err error) {
 }
 ```
 
-### day\_04.go
+## day\_04.go
 
 ```text
 package main
@@ -160,7 +160,7 @@ func main() {
 }
 ```
 
-### day\_05.go
+## day\_05.go
 
 ```text
 package main
@@ -217,7 +217,7 @@ func main() {
 }
 ```
 
-### day\_06.go
+## day\_06.go
 
 ```text
 package main
@@ -260,7 +260,7 @@ func checkError(err error) {
 }
 ```
 
-### day\_07.go
+## day\_07.go
 
 ```text
 package main
@@ -297,7 +297,7 @@ func main() {
 }
 ```
 
-### day\_08.go
+## day\_08.go
 
 ```text
 package main
@@ -350,7 +350,7 @@ func checkError(err error) {
 }
 ```
 
-### day\_09.go
+## day\_09.go
 
 ```text
 // this challenge requires fast I/O, hence prefer to use bufio, using fmt.Scan wont work
@@ -397,7 +397,7 @@ func main() {
 }
 ```
 
-### day\_10.go
+## day\_10.go
 
 ```text
 package main
@@ -464,7 +464,7 @@ func checkError(err error) {
 }
 ```
 
-### day\_11.go
+## day\_11.go
 
 ```text
 package main
@@ -526,7 +526,7 @@ func checkError(err error) {
 }
 ```
 
-### day\_12.go
+## day\_12.go
 
 ```text
 package main
@@ -596,7 +596,7 @@ func checkError(err error) {
 }
 ```
 
-### day\_13.go
+## day\_13.go
 
 ```text
 // Golang doesnt have inheritance thats why
@@ -606,7 +606,7 @@ func checkError(err error) {
 package day12
 ```
 
-### day\_14.go
+## day\_14.go
 
 ```text
 // Golang doesnt have abstract classes
@@ -616,7 +616,7 @@ package day12
 package day13
 ```
 
-### day\_15.go
+## day\_15.go
 
 ```text
 package main
@@ -658,7 +658,7 @@ func main() {
 }
 ```
 
-### day\_16.go
+## day\_16.go
 
 ```text
 package main
@@ -696,7 +696,7 @@ func main() {
 }
 ```
 
-### day\_17.go
+## day\_17.go
 
 ```text
 package main
@@ -721,7 +721,7 @@ func main() {
 }
 ```
 
-### day\_18.go
+## day\_18.go
 
 ```text
 package main
@@ -781,7 +781,7 @@ func checkError(err error) {
 }
 ```
 
-### day\_19.go
+## day\_19.go
 
 ```text
 package main
