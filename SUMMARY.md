@@ -2,9 +2,10 @@
 
 * [Data Structures & Algorithms](README.md)
 
-## Maths
+## Concepts <a id="maths"></a>
 
-* [Mathematics - 1](maths/mathematics.md)
+* [Theory](maths/theory.md)
+* [Mathematics](maths/mathematics.md)
 
 ## CP
 
@@ -44,5 +45,8 @@
 
 ## Algorithms <a id="named"></a>
 
+* [Recursion](named/recursion.md)
 * [Sorting](named/sorting.md)
+* [Named Algorithms](named/named-algorithms/README.md)
+  * [Untitled](named/named-algorithms/untitled.md)
 
