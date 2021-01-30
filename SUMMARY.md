@@ -6,6 +6,7 @@
 
 * [Theory](maths/theory.md)
 * [Mathematics](maths/mathematics.md)
+* [Bit Manipulation](maths/bit-manipulation.md)
 
 ## CP
 
@@ -25,6 +26,7 @@
 * [LinkedList](data-structure/linkedlist/README.md)
   * [Golang](data-structure/linkedlist/golang.md)
   * [C++](data-structure/linkedlist/c++.md)
+* [Array](data-structure/array.md)
 * [Binary Search Tree](data-structure/binary-search-tree-1.md)
 * [Graphs](data-structure/graphs/README.md)
   * [Important Code](data-structure/graphs/important-code.md)
