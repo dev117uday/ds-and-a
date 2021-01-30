@@ -6,7 +6,7 @@ description: Tips & Tricks
 
 ## Faster I/O in Go
 
-```text
+```go
 package main
 
 import (
@@ -32,7 +32,7 @@ func main() {
 
 ### Min/Max Int and Uint
 
-```text
+```go
 const MaxUint = ^uint(0)
 const MinUint = 0
 
@@ -42,7 +42,7 @@ const MinInt = -MaxInt - 1
 
 ### 2d-vector-input.go
 
-```text
+```go
 package main
 
 import (
@@ -74,7 +74,7 @@ func main() {
 
 ### custom-vector-input.go
 
-```text
+```go
 package main
 
 import (
@@ -99,7 +99,7 @@ func main() {
 
 ### integer-input.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -113,7 +113,7 @@ func main() {
 
 ### map-slice.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -126,14 +126,12 @@ func main() {
     }
 
     fmt.Println(elements[0]["uday"])
-
-
 }
 ```
 
 ### string-input.go
 
-```text
+```go
 package main
 
 import (
@@ -153,7 +151,7 @@ func main() {
 
 ### vector-input-integer.go
 
-```text
+```go
 package main
 
 import "fmt"
