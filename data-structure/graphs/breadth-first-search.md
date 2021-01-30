@@ -60,7 +60,6 @@ class Graph {
 }
 ```
 
-
 ## Breadth First search Disconnected graph
 
 ```java

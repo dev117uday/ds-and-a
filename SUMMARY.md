@@ -9,11 +9,6 @@
 
 ## CP
 
-* [LeetCode](cp/leetcode/README.md)
-  * [Questions \(Set 2\)](cp/leetcode/questions-set-2.md)
-  * [Questions \(Set 1\)](cp/leetcode/questions-set-1.md)
-* [HackerRank](cp/hackerrank/README.md)
-  * [30 days of Code](cp/hackerrank/30-days-of-code.md)
 * [Codeforce](cp/codeforce/README.md)
   * [B](cp/codeforce/b/README.md)
     * [Questions \(Set 1\)](cp/codeforce/b/questions-set-1.md)
@@ -41,12 +36,10 @@
   * [Java](data-structure/binary-search-tree/java.md)
   * [C++](data-structure/binary-search-tree/c++.md)
   * [Golang](data-structure/binary-search-tree/golang.md)
-  * [C\#](data-structure/binary-search-tree/c.md)
 
 ## Algorithms <a id="named"></a>
 
 * [Recursion](named/recursion.md)
 * [Sorting](named/sorting.md)
-* [Named Algorithms](named/named-algorithms/README.md)
-  * [Untitled](named/named-algorithms/untitled.md)
+* [Named Algorithms](named/named-algorithms.md)
 

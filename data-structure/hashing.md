@@ -114,7 +114,7 @@ class Main
 }
 ```
 
-## Pair with sum x :
+## Pair with sum x
 
 ```java
 import java.util.*;

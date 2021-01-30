@@ -94,7 +94,6 @@ func main() {
 
 ## Greatest C Divisor or Highest C Factor \( GCD\|HCF \)
 
-
 ```go
 package main
 
@@ -117,9 +116,7 @@ func main() {
 
 ## First N Prime
 
-
 ```go
-
 package main
 
 import (
