@@ -6,7 +6,7 @@ description: Codeforce A
 
 ## 1A.cpp
 
-```text
+```cpp
 #include <iostream>
 #include <cmath>
 
@@ -24,7 +24,7 @@ int main(){
 
 ## 344A.cpp
 
-```text
+```cpp
 #include <iostream>
 #include <vector>
 
@@ -55,7 +55,7 @@ int main() {
 
 ## 4A.cpp
 
-```text
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -80,7 +80,7 @@ int main(){
 
 ## 71A.cpp
 
-```text
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -103,6 +103,64 @@ int main()
         }
     }
     return 0;
+}
+```
+
+## 131A.go
+
+```go
+package main
+
+import (
+    "fmt"
+    "strings"
+)
+
+func main() {
+
+    var inputString string
+    _, _ = fmt.Scanln(&inputString)
+    magic(inputString)
+
+}
+
+func magic(inputString string) {
+    if allUpper(inputString) {
+        fmt.Print(strings.ToLower(inputString))
+        return
+    }
+    if isSpecialCase(inputString) {
+        str := string(inputString[0]-32) + (strings.ToLower(inputString[1:]))
+        fmt.Print(str)
+    } else {
+        fmt.Print(inputString)
+    }
+}
+
+func allUpper(input string) bool {
+    for _, val := range input {
+        if val >= 65 && val <= 90 {
+            continue
+        } else {
+            return false
+        }
+    }
+    return true
+}
+
+func isSpecialCase(input string) bool {
+    if input[0] >= 97 && input[0] <= 122 {
+        for i := 1; i < len(input); i++ {
+            if input[i] >= 65 && input[i] <= 90 {
+                continue
+            } else {
+                return false
+            }
+        }
+    } else {
+        return false
+    }
+    return true
 }
 ```
 
