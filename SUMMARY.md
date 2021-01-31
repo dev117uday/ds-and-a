@@ -6,6 +6,8 @@
 
 * [Theory](maths/theory.md)
 * [Mathematics](maths/mathematics.md)
+* [Hashing](maths/hashing.md)
+* [Recursion](maths/recursion.md)
 * [Bit Manipulation](maths/bit-manipulation.md)
 
 ## CP
@@ -26,6 +28,7 @@
 * [LinkedList](data-structure/linkedlist/README.md)
   * [Golang](data-structure/linkedlist/golang.md)
   * [C++](data-structure/linkedlist/c++.md)
+* [Matrix](data-structure/matrix.md)
 * [Array](data-structure/array.md)
 * [Binary Search Tree](data-structure/binary-search-tree-1.md)
 * [Graphs](data-structure/graphs/README.md)
@@ -41,7 +44,6 @@
 
 ## Algorithms <a id="named"></a>
 
-* [Recursion](named/recursion.md)
+* [Searching](named/searching.md)
 * [Sorting](named/sorting.md)
-* [Named Algorithms](named/named-algorithms.md)
 
