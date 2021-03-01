@@ -10,7 +10,7 @@ import java.lang.*;
 class solution
 {
     public static void main (String[] args) {
-        int mat[][] = new int[][]{{10, 20, 30, 40}, {15, 25, 80, 85}, {35, 90, 100, 120}};
+        int mat[][] = new int[][]{};
         int ele = 90;
         
         System.out.println(isPresent(mat, ele, 3, 4) ? "yes" : "no");
