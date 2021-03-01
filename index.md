@@ -2,7 +2,7 @@
 
 * [Data Structures & Algorithms](README.md)
 
-## Concepts <a id="maths"></a>
+## Concepts
 
 * [Theory](maths/theory.md)
 * [Mathematics](maths/mathematics.md)
@@ -44,7 +44,7 @@
   * [C++](data-structure/binary-search-tree/c++.md)
   * [Golang](data-structure/binary-search-tree/golang.md)
 
-## Algorithms <a id="named"></a>
+## Algorithms
 
 * [Searching](named/searching.md)
 * [Sorting](named/sorting.md)
