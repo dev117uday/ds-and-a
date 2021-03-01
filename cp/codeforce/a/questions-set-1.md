@@ -6,7 +6,7 @@ description: Codeforce A
 
 ## 110A.go
 
-```text
+```go
 package main
 
 import (
@@ -62,7 +62,7 @@ func main() {
 
 ## 112A.go
 
-```text
+```go
 package main
 
 import (
@@ -99,7 +99,7 @@ func main() {
 
 ## 116A.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -126,7 +126,7 @@ func main() {
 
 ## 118A.go
 
-```text
+```go
 package main
 
 import (
@@ -157,7 +157,7 @@ func main() {
 
 ## 122A.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -182,7 +182,7 @@ func main() {
 
 ## 133A.go
 
-```text
+```go
 package main
 
 import (
@@ -210,7 +210,7 @@ func main() {
 
 ## 136A.go
 
-```text
+```go
 package main
 
 import (
@@ -221,9 +221,6 @@ import (
 
 var reader *bufio.Reader = bufio.NewReader(os.Stdin)
 var writer *bufio.Writer = bufio.NewWriter(os.Stdout)
-
-func printf(f string, a ...interface{}) { fmt.Fprintf(writer, f, a...) }
-func scanf(f string, a ...interface{})  { fmt.Fscanf(reader, f, a...) }
 
 func main() {
     var number, i uint8
@@ -247,7 +244,7 @@ func main() {
 
 ## 158A.go
 
-```text
+```go
 package main
 
 import (
@@ -289,7 +286,7 @@ func main() {
 
 ## 160A.go
 
-```text
+```go
 package main
 
 import (
@@ -324,7 +321,7 @@ func main() {
 
 ## 1A.go
 
-```text
+```go
 // doesnt work for bi value, refer to cpp version
 
 package main
@@ -349,7 +346,7 @@ func main() {
 
 ## 231A.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -387,7 +384,7 @@ func main(){
 
 ## 236A.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -423,7 +420,7 @@ func main() {
 
 ## 263A.go
 
-```text
+```go
 package main
 
 import (
@@ -452,7 +449,7 @@ func main() {
 
 ## 266A.go
 
-```text
+```go
 package main
 
 import (
@@ -482,7 +479,7 @@ func main() {
 
 ## 271A.go
 
-```text
+```go
 package main
 
 import (
@@ -511,7 +508,7 @@ func main() {
 
 ## 281A.go
 
-```text
+```go
 package main
 
 import (
@@ -532,7 +529,7 @@ func main() {
 
 ## 282A.go
 
-```text
+```go
 package main
 
 import (
@@ -567,7 +564,7 @@ func main() {
 
 ## 339A.go
 
-```text
+```go
 package main
 
 import (
@@ -599,7 +596,7 @@ func main() {
 
 ## 41A.go
 
-```text
+```go
 package main
 
 import (
@@ -626,7 +623,7 @@ func main() {
 
 ## 4A.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -646,7 +643,7 @@ func main() {
 
 ## 58A.go
 
-```text
+```go
 package main
 
 import (
@@ -681,7 +678,7 @@ func main() {
 
 ## 59A.go
 
-```text
+```go
 package main
 
 import (
@@ -713,7 +710,7 @@ func main() {
 
 ## 69A.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -747,7 +744,7 @@ func main() {
 
 ## 71A.go
 
-```text
+```go
 package main
 
 import (
@@ -774,7 +771,7 @@ func main() {
 
 ## 96A.go
 
-```text
+```go
 package main
 
 import (
@@ -800,7 +797,7 @@ func main() {
 
 ## 1030A.go
 
-```text
+```go
 package main
 
 import (
@@ -810,8 +807,6 @@ import (
 )
 
 var reader *bufio.Reader = bufio.NewReader(os.Stdin)
-
-func scanf(f string, a ...interface{}) { fmt.Fscanf(reader, f, a...) }
 
 func main() {
 
@@ -835,7 +830,7 @@ func main() {
 
 ## 344A.go
 
-```text
+```go
 package main
 
 import (
@@ -845,8 +840,6 @@ import (
 )
 
 var reader *bufio.Reader = bufio.NewReader(os.Stdin)
-
-func scanf(f string, a ...interface{}) { fmt.Fscanf(reader, f, a...) }
 
 func main() {
     var number, i int = 0, 1
@@ -874,7 +867,7 @@ func main() {
 
 ## 467A.go
 
-```text
+```go
 package main
 
 import (
@@ -885,7 +878,6 @@ import (
 
 var reader *bufio.Reader = bufio.NewReader(os.Stdin)
 
-func scanf(f string, a ...interface{}) { fmt.Fscanf(reader, f, a...) }
 
 func main() {
     var num uint
@@ -906,7 +898,7 @@ func main() {
 
 ## 497A.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -937,7 +929,7 @@ func main() {
 
 ## 546A.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -963,7 +955,7 @@ func main() {
 
 ## 677A.go
 
-```text
+```go
 package main
 
 import (
@@ -973,8 +965,6 @@ import (
 )
 
 var reader *bufio.Reader = bufio.NewReader(os.Stdin)
-
-func scanf(f string, a ...interface{}) { fmt.Fscanf(reader, f, a...) }
 
 func main() {
 
@@ -1002,7 +992,7 @@ func main() {
 
 ## 734A.go
 
-```text
+```go
 package main
 
 import (
@@ -1015,8 +1005,6 @@ import (
 var reader *bufio.Reader = bufio.NewReader(os.Stdin)
 var writer *bufio.Writer = bufio.NewWriter(os.Stdout)
 
-func printf(f string, a ...interface{}) { fmt.Fprintf(writer, f, a...) }
-func scanf(f string, a ...interface{})  { fmt.Fscanf(reader, f, a...) }
 
 func main() {
     var num int32
@@ -1044,7 +1032,7 @@ func main() {
 
 ## 791A.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -1072,7 +1060,7 @@ func main() {
 
 ## 977A.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -1093,8 +1081,6 @@ func main() {
     }
 
     fmt.Println(number)
-
-
 }
 ```
 
