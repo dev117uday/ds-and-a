@@ -12,12 +12,12 @@
 
 ## CP
 
-* [LeetCode](cp/leetcode/README.md)
+* LeetCode
   * [Set A](cp/leetcode/set-a.md)
-* [Codeforce](cp/codeforce/README.md)
-  * [B](cp/codeforce/b/README.md)
+* Codeforce
+  * B
     * [Questions \(Set 1\)](cp/codeforce/b/questions-set-1.md)
-  * [A](cp/codeforce/a/README.md)
+  * A
     * [Questions \(Set 2\)](cp/codeforce/a/questions-set-2.md)
     * [Questions \(Set 1\)](cp/codeforce/a/questions-set-1.md)
 
