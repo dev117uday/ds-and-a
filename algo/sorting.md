@@ -6,7 +6,7 @@ description: All sorting
 
 ## Selection Sort
 
-```python
+```java
 class SelectionSort 
 { 
     void sort(int arr[]) 
