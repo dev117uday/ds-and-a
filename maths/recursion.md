@@ -49,7 +49,7 @@ Output : Disk 1 moved from A to C
 ```
 
 ```java
-class GFG
+class Program
 {
     static void towerOfHanoi(int n, char from_rod,
                         char to_rod, char aux_rod) 
@@ -83,7 +83,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*; 
   
-class GFG 
+class Program 
 { 
     // A recursive function that  
     // check a str(s..e) is  
@@ -144,7 +144,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*; 
   
-class GFG 
+class Program 
 { 
   
     static int josephus(int n, int k) 
@@ -160,7 +160,7 @@ class GFG
     } 
   
     // Driver Program to test above function 
-    public static void main(String[] args) 
+    public static void main( ) 
     { 
     int n = 14; 
     int k = 2; 
@@ -222,7 +222,7 @@ class Solution
         return 1+res;
     }
     
-    public static void main (String[] args) 
+    public static void main ( ) 
     {
         int n = 25;
         int a = 11, b = 12, c = 13;
@@ -239,7 +239,7 @@ import java.util.*;
 import java.io.*;
 import java.lang.*;
 
-class GFG { 
+class Program { 
   
 // str : Stores input string  
 // curr : Stores current subset  
@@ -269,7 +269,7 @@ static void powerSet(String str, int index,
 }  
   
 // Driver code  
-public static void main(String[] args)  
+public static void main( )  
 { 
     String str = "abc";  
         int index = 0; 

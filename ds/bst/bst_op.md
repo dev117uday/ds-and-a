@@ -33,7 +33,7 @@ class Program {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main( ) {
         Tree first = new Tree(10);
         first.left = new Tree(5);
         first.left.left = new Tree(4);
@@ -75,7 +75,7 @@ class Program {
         return root;
     }
 
-    public static void main(String[] args) {
+    public static void main( ) {
         Tree first = new Tree(10);
         first.left = new Tree(5);
         first.left.left = new Tree(4);
@@ -136,7 +136,7 @@ class Program {
         return root;
     }
 
-    public static void main(String[] args) {
+    public static void main( ) {
         Tree first = new Tree(10);
         first.left = new Tree(5);
         first.left.left = new Tree(4);
@@ -199,7 +199,7 @@ class Program {
         return res;
     }
 
-    public static void main(String[] args) {
+    public static void main( ) {
         Tree first = new Tree(10);
         first.left = new Tree(5);
         first.left.left = new Tree(4);

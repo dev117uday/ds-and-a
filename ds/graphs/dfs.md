@@ -32,7 +32,7 @@ class Graph {
         DFSRec(adj,s,visited);
     }
 
-    public static void main(String[] args) 
+    public static void main( ) 
     {  
         int V = 7; 
         ArrayList<ArrayList<Integer> > adj = new ArrayList<ArrayList<Integer>>(V); 
@@ -88,7 +88,7 @@ class Graph {
         }
     }
 
-    public static void main(String[] args) 
+    public static void main( ) 
     {  
         int V = 5; 
         ArrayList<ArrayList<Integer> > adj = new ArrayList<ArrayList<Integer>>(V); 
@@ -142,7 +142,7 @@ class Graph {
         return count;
     }
 
-    public static void main(String[] args) 
+    public static void main( ) 
     {  
         int V = 5; 
         ArrayList<ArrayList<Integer> > adj = new ArrayList<ArrayList<Integer>>(V); 

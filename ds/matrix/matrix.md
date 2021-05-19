@@ -9,7 +9,7 @@ import java.lang.*;
 
 class solution
 {
-    public static void main (String[] args) {
+    public static void main ( ) {
         int mat[][] = new int[][]{};
         int ele = 90;
         
@@ -37,7 +37,7 @@ class solution
 
 ```java
 // JAVA Code for Boundary elements of a Matrix 
-class GFG { 
+class Program { 
 
 	public static void printBoundary(int a[][], int m, 
 									int n) 
@@ -60,7 +60,7 @@ class GFG {
 	} 
 
 	/* Driver program to test above function */
-	public static void main(String[] args) 
+	public static void main( ) 
 	{ 
 		int a[][] = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 1, 2, 3, 4 }, { 5, 6, 7, 8 } }; 
 
@@ -76,7 +76,7 @@ class GFG {
 // Java program to print a given matrix in spiral form 
 import java.io.*; 
 
-class GFG { 
+class Program { 
 	// Function print matrix in spiral form 
 	static void spiralPrint(int m, int n, int a[][]) 
 	{ 
@@ -120,7 +120,7 @@ class GFG {
 	} 
 
 	// driver program 
-	public static void main(String[] args) 
+	public static void main( ) 
 	{ 
 		int R = 3; 
 		int C = 6; 

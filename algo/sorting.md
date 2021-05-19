@@ -350,7 +350,7 @@ class Radix {
     } 
 
     /*Driver Code*/
-    public static void main(String[] args) 
+    public static void main( ) 
     { 
         int arr[] = { 170, 45, 75, 90, 802, 24, 2, 66 }; 
         int n = arr.length; 

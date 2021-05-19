@@ -12,7 +12,7 @@ import java.io.*;
 import java.util.*;
 import java.lang.*;
 
-class GFG  
+class Program  
 { 
     static void isKthBitSet(int n, int k) 
     { 
@@ -24,7 +24,7 @@ class GFG
     } 
 
     // Driver code 
-    public static void main (String[] args)  
+    public static void main ( )  
     { 
         int n = 5, k = 1; 
         isKthBitSet(n, k); 
@@ -50,7 +50,7 @@ class Test
     } 
 
     // Driver method 
-    public static void main(String[] args)  
+    public static void main( )  
     { 
          System.out.println(isPowerOfTwo(31) ? "Yes" : "No"); 
          System.out.println(isPowerOfTwo(64) ? "Yes" : "No"); 
@@ -113,7 +113,7 @@ class OddOccurance
         return res; 
     } 
 
-    public static void main(String[] args)  
+    public static void main( )  
     { 
         OddOccurance occur = new OddOccurance(); 
         int ar[] = new int[]{2, 3, 5, 4, 5, 2, 4, 3, 5, 2, 4, 4, 2}; 
@@ -133,7 +133,7 @@ import java.util.*;
 import java.io.*;
 import java.lang.*;
 
-class GFG 
+class Program 
 { 
 
     // Function to find longest substring 
@@ -196,7 +196,7 @@ class GFG
     } 
 
     // Driver code 
-    public static void main(String[] args) 
+    public static void main( ) 
     { 
         String bin = "1010"; 
         System.out.println(findLongestSub(bin)); 
@@ -212,7 +212,7 @@ import java.io.*;
 import java.util.*;
 import java.lang.*;
 
-public class GFG { 
+public class Program { 
 
     static void printPowerSet(char []set, 
                             int set_size) 
@@ -243,7 +243,7 @@ public class GFG {
     } 
 
     // Driver program to test printPowerSet 
-    public static void main (String[] args) 
+    public static void main ( ) 
     { 
         char []set = {'a', 'b', 'c'}; 
         printPowerSet(set, 3); 
