@@ -205,7 +205,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*; 
   
-class Solution
+class Program
 {
     static int rodCutting(int n, int a, int b, int c)
     {

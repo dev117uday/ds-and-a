@@ -7,7 +7,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Solution
+class Program
 {
     public static void main ( ) 
     {
@@ -44,7 +44,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Solution
+class Program
 {
     public static void main ( ) 
     {

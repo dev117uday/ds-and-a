@@ -7,7 +7,7 @@ import java.util.*;
 import java.io.*;
 import java.lang.*;
 
-class solution
+class Program
 {
     public static void main ( ) {
         int mat[][] = new int[][]{};

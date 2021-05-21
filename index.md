@@ -11,8 +11,12 @@
 * [Searching](algo/searching.md)
 * [Sorting](algo/sorting.md)
 * [Hashing](maths/hashing.md)
+* [String](ds/string/string.md)
 
 ## Data Structure
+
+* [Doubly LinkedList](ds/ll/dll.md) 
+  * [Singly LinkedList](ds/ll/ll.md)
 
 * [Graphs](ds/graphs/graphs.md)
   * [Important Code](ds/graphs/imp.md)

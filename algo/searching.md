@@ -7,7 +7,7 @@ import java.util.*;
 import java.io.*;
 import java.lang.*;
 
-class Solution
+class Program
 {
     static int leftIndex(int arr[], int n, int x)
     {
@@ -44,7 +44,7 @@ import java.util.*;
 import java.io.*;
 import java.lang.*;
 
-class Solution
+class Program
 {
     static int leftIndex(int arr[], int n, int x)
     {
@@ -103,7 +103,7 @@ import java.util.*;
 import java.io.*;
 import java.lang.*;
 
-class Solution
+class Program
 {
     static int count1s(int arr[], int n)
     {
@@ -267,7 +267,7 @@ class PeakElement
 // an algorithm that finds an element in an 
 // array of infinite size 
 
-class Test 
+class Program 
 { 
     // Simple binary search algorithm 
     static int binarySearch(int arr[], int l, int r, int x) 
@@ -334,7 +334,7 @@ class Test
 
 ```java
 // A Java program to find floor(sqrt(x) 
-public class Test 
+public class Program 
 { 
     public static int floorSqrt(int x) 
     { 
@@ -413,7 +413,7 @@ import java.util.*;
 import java.io.*;
 import java.lang.*;
 
-class Solution
+class Program
 {
     static int isPresent(int arr[], int n, int sum)
     {

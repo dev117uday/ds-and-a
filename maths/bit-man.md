@@ -38,7 +38,7 @@ class Program
 // Java program to efficiently  
 // check for power for 2 
 
-class Test 
+class Program 
 { 
     /* Method to check if x is power of 2*/
     static boolean isPowerOfTwo (int x) 
