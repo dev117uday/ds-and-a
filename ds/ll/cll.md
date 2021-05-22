@@ -144,7 +144,7 @@ class Node {
 
 class Program {
 
-    public static void main(String args[]) {
+    public static void main ( String[] args ) {
         Node head = new Node(10);
         Node temp1 = new Node(20);
         Node temp2 = new Node(30);

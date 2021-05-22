@@ -9,7 +9,7 @@ import java.io.*;
 
 class Program
 {
-    public static void main ( ) 
+    public static void main ( String[] args ) 
     {
         int arr[] = new int[]{5, 3, 9, -4, -6, 7, -1};
         int n = arr.length;
@@ -46,7 +46,7 @@ import java.io.*;
 
 class Program
 {
-    public static void main ( ) 
+    public static void main ( String[] args ) 
     {
         int arr[] = new int[]{8, 3, -7, -4, 1};
         int n = arr.length;
@@ -82,7 +82,7 @@ import java.lang.*;
 
 class Main
 {
-    public static void main ( ) {
+    public static void main ( String[] args ) {
         int arr[] = new int[]{1, 1, 1, 0, 1, 0, 1, 1, 1};
         int len = arr.length;
 
@@ -123,7 +123,7 @@ import java.lang.*;
 
 class Main
 {
-    public static void main ( ) {
+    public static void main ( String[] args ) {
         int arr[] = new int[]{3, 8, 4, 7, 6, 1};
         int len = arr.length;
         int x = 14;

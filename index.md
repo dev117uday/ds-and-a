@@ -15,8 +15,11 @@
 
 ## Data Structure
 
-* [Doubly LinkedList](ds/ll/dll.md) 
+* Linkedlist
+  * [LinkedList Miscell](ds/ll/sll.md)
   * [Singly LinkedList](ds/ll/ll.md)
+  * [Doubly LinkedList](ds/ll/dll.md)
+  * [Circular LinkedList](ds/ll/cll.md)
 
 * [Graphs](ds/graphs/graphs.md)
   * [Important Code](ds/graphs/imp.md)

@@ -53,7 +53,7 @@ class Program {
         }
     }
 
-    public static void main( ) {
+    public static void main ( String[] args ) {
         tree first = new tree(10);
         first.left = new tree(20);
         first.right = new tree(30);
@@ -115,7 +115,7 @@ class Program {
         return result;
     }
 
-    public static void main( ) {
+    public static void main ( String[] args ) {
         tree first = new tree(10);
         first.left = new tree(20);
         first.right = new tree(30);
@@ -178,7 +178,7 @@ class Program {
         return head;
     }
 
-    public static void main( ) {
+    public static void main ( String[] args ) {
         tree first = new tree(10);
         first.left = new tree(20);
         first.right = new tree(30);
@@ -213,7 +213,7 @@ class Node
 
 class Program { 
 
-    public static void main(String args[]) 
+    public static void main ( String[] args ) 
     { 
         int in[]={20,10,40,30,50};
         int pre[]={10,20,30,40,50};
@@ -271,7 +271,7 @@ class Node
 
 class Program { 
 
-    public static void main(String args[]) 
+    public static void main ( String[] args ) 
     { 
         Node root=new Node(1);
         root.left=new Node(2);
@@ -341,7 +341,7 @@ class Node
 
 class Program { 
 
-    public static void main(String args[]) 
+    public static void main ( String[] args ) 
     { 
         Node root=new Node(10);
         root.left=new Node(20);
@@ -388,7 +388,7 @@ class Node
 
 class Program { 
 
-    public static void main(String args[]) 
+    public static void main ( String[] args ) 
     { 
         Node root=new Node(10);
         root.left=new Node(20);
@@ -444,7 +444,7 @@ class Distance{
 
 class Program { 
 
-    public static void main(String args[]) 
+    public static void main ( String[] args ) 
     { 
         Node root=new Node(10);
         root.left=new Node(20);
@@ -502,7 +502,7 @@ class Node
 
 class Program { 
 
-    public static void main(String args[]) 
+    public static void main ( String[] args ) 
     { 
         Node root=new Node(10);
         root.left=new Node(20);
@@ -541,7 +541,7 @@ class Node {
 
 class Program {
 
-    public static void main(String args[]) {
+    public static void main ( String[] args ) {
         Node root = new Node(10);
         root.left = new Node(20);
 
@@ -614,7 +614,7 @@ class Node {
 
 class Program {
 
-    public static void main(String args[]) {
+    public static void main ( String[] args ) {
         Node root = new Node(10);
         root.left = new Node(20);
 
@@ -674,7 +674,7 @@ class Program {
         }
     }
 
-    public static void main( ) {
+    public static void main ( String[] args ) {
         Tree first = new Tree(10);
         first.left = new Tree(20);
         first.right = new Tree(30);
@@ -725,7 +725,7 @@ class Program {
         }
     }
 
-    public static void main( ) {
+    public static void main ( String[] args ) {
         Tree first = new Tree(10);
         first.left = new Tree(20);
         first.right = new Tree(30);

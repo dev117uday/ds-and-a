@@ -8,7 +8,7 @@ import java.io.*;
 import java.lang.*;
 
 class Program {
-    public static void main( ) {
+    public static void main ( String[] args ) {
         String str = "geeksforgeeks";
         int[] count = new int[26];
         for (int i = 0; i < str.length(); i++) {
@@ -45,7 +45,7 @@ class Program {
         return true;
     }
 
-    public static void main( ) {
+    public static void main ( String[] args ) {
         String str = "geeksrorgeeks";
         System.out.println(isPalindrome(str));
     }
@@ -73,7 +73,7 @@ public class Program {
         return s2p == str2.length();
     }
 
-    public static void main( ) {
+    public static void main ( String[] args ) {
         String str = "geeksforgeeks";
         String str1 = "grges";
         System.out.println(isSubSeq(str, str1));
@@ -104,7 +104,7 @@ public class Program {
         return true;
     }
 
-    public static void main() {
+    public static void main ( String[] args ) {
         String str1 = "abaac";
         String str2 = "aacba";
         if (areAnagram(str1, str2))
@@ -137,7 +137,7 @@ class Program {
         return -1;
     }
 
-    public static void main() {
+    public static void main ( String[] args ) {
         String str = "geeksforgeeks";
         System.out.println("Index of leftmost repeating character:");
         System.out.println(leftMost(str));
@@ -165,7 +165,7 @@ class Program {
     return -1;
     } 
   
-    public static void main() 
+    public static void main ( String[] args ) 
     {   String str = "geeksforgeeks";
         System.out.println("Index of leftmost non-repeating element:");
         System.out.println(nonRep(str));  
@@ -205,7 +205,7 @@ class Program {
     reverse(str,0,n-1);
     }
   
-    public static void main() 
+    public static void main ( String[] args ) 
     {   String s = "Welcome to Program";int n=s.length();
         char[] str = s.toCharArray();
         System.out.println("After reversing words in the string:");
@@ -237,7 +237,7 @@ class Program {
         }
     }
 
-    public static void main() {
+    public static void main ( String[] args ) {
         String txt = "ABCABCD";
         String pat = "ABCD";
         System.out.print("All index numbers where pattern found: ");
@@ -273,7 +273,7 @@ class Program {
         }
     }
 
-    public static void main() {
+    public static void main ( String[] args ) {
         String txt = "ABCABCD";
         String pat = "ABCD";
         System.out.print("All index numbers where pattern found: ");
@@ -326,7 +326,7 @@ class Program {
 
     }
 
-    public static void main() {
+    public static void main ( String[] args ) {
         String txt = "GEEKS FOR GEEKS";
         String pat = "GEEK";
         System.out.print("All index numbers where pattern found: ");
@@ -364,7 +364,7 @@ class Program {
         }
     }
 
-    public static void main() {
+    public static void main ( String[] args ) {
         String txt = "abacabad";
         int[] lps = new int[txt.length()];
         fillLPS(txt, lps);
@@ -419,7 +419,7 @@ class Program {
             }
         }
     }
-    public static void main() 
+    public static void main ( String[] args ) 
     {   String txt = "ababcababaad",pat="ababa";
         KMP(pat,txt);
     }  
@@ -441,7 +441,7 @@ class Program {
     }
 
 
-    public static void main() {
+    public static void main ( String[] args ) {
         String s1 = "ABCD";
         String s2 = "CDAB";
         if (areRotations(s1, s2)) {
@@ -467,7 +467,7 @@ class Program {
     }
 
 
-    public static void main() {
+    public static void main ( String[] args ) {
         String s1 = "ABCD";
         String s2 = "CDAB";
         if (areRotations(s1, s2)) {
@@ -510,7 +510,7 @@ class Program {
         return res;
     }
 
-    public static void main() {
+    public static void main ( String[] args ) {
         String str = "STRING";
         System.out.print(lexRank(str));
     }
@@ -540,7 +540,7 @@ class Program {
         return res;
     }
 
-    public static void main() {
+    public static void main ( String[] args ) {
         String str = "geeksforgeeks";
         int len = longestDistinct(str);
         System.out.print("The length of the longest distinct characters substring is " + len);

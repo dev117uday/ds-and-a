@@ -27,7 +27,7 @@ class Program
 
         return -1;
     }
-    public static void main ( ) {
+    public static void main ( String[] args ) {
         int arr[] = new int[]{2, 3, 3, 3, 3, 3};
         int n = arr.length;
         int ele = 3;
@@ -83,7 +83,7 @@ class Program
         }
         return -1;
     }
-    public static void main ( ) {
+    public static void main ( String[] args ) {
         int arr[] = new int[]{2, 3, 4, 5, 5, 5, 6, 6};
         int n = arr.length;
         int ele = 5;
@@ -120,7 +120,7 @@ class Program
         }
         return 0;
     }
-    public static void main ( ) {
+    public static void main ( String[] args ) {
         int arr[] = {0, 0, 0, 0, 1, 1, 1, 1, 1};
         int n = arr.length;
         System.out.println(count1s(arr, n));
@@ -197,7 +197,7 @@ class Main
     } 
 
     // main function 
-    public static void main(String args[]) 
+    public static void main ( String[] args ) 
     { 
     // Let us search 3 in below array 
     int arr1[] = {5, 6, 7, 8, 9, 10, 1, 2, 3}; 
@@ -250,7 +250,7 @@ class PeakElement
     } 
 
     // Driver method 
-    public static void main ( ) 
+    public static void main ( String[] args ) 
     { 
         int arr[] = {1, 3, 20, 4, 1, 0}; 
         int n = arr.length; 
@@ -316,7 +316,7 @@ class Program
     } 
 
     // Driver method to test the above function 
-    public static void main( ) 
+    public static void main ( String[] args ) 
     { 
         int arr[] = new int[]{3, 5, 7, 9, 10, 90, 
                             100, 130, 140, 160, 170}; 
@@ -366,7 +366,7 @@ public class Program
     } 
 
     // Driver Method 
-    public static void main(String args[]) 
+    public static void main ( String[] args ) 
     { 
         int x = 11; 
         System.out.println(floorSqrt(x)); 
@@ -397,7 +397,7 @@ class PairSum {
     } 
 
     // Main to test the above function 
-    public static void main( ) 
+    public static void main ( String[] args ) 
     { 
         int A[] = { 1, 4, 45, 6, 10, 8 }; 
         int n = 16; 
@@ -431,7 +431,7 @@ class Program
 
         return 0;
     }
-    public static void main ( ) {
+    public static void main ( String[] args ) {
         int arr[] = new int[]{2, 3, 7, 8, 11};
         int n = arr.length;
         int sum = 14;
@@ -521,7 +521,7 @@ class FindTriplet {
     } 
 
     // Driver program to test above functions 
-    public static void main( ) 
+    public static void main ( String[] args ) 
     { 
         FindTriplet triplet = new FindTriplet(); 
         int A[] = { 1, 4, 45, 6, 10, 8 }; 

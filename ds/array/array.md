@@ -15,7 +15,7 @@ class Program {
             arr[n-i-1] = temp;
         }
     }
-	public static void main () {
+	public static void  main (String[] args) {
 		int arr[] = new int[]{2, 8, 7, 10, 5};
 		int n = arr.length;
 		
@@ -53,7 +53,7 @@ class Program {
         reverse(arr, d, n-1);
         reverse(arr, 0, n-1);
     }
-	public static void main () 
+	public static void  main (String[] args) 
 	{
 	    int arr[] = new int[]{2, 8, 7, 10, 5};
 	    int n = arr.length;
@@ -90,7 +90,7 @@ class LeadersInArray
 	} 
 
 	/* Driver program to test above functions */
-	public static void main() 
+	public static void main ( String[] args ) 
 	{ 
 		LeadersInArray lead = new LeadersInArray(); 
 		int arr[] = new int[]{16, 17, 4, 3, 5, 2}; 
@@ -144,7 +144,7 @@ class Program {
     }
 
     // Driver method to test the above function 
-    public static void main() {
+    public static void main ( String[] args ) {
 
         System.out.println("Maximum water that can be accumulated is " +
                 findWater(arr.length));
@@ -217,7 +217,7 @@ class StockBuySell {
         return;
     }
 
-    public static void main() {
+    public static void main ( String[] args ) {
         StockBuySell stock = new StockBuySell();
 
         // stock prices on consecutive days
@@ -267,7 +267,7 @@ class Program {
     }
 
     /* Driver program to test above function */
-    public static void main() {
+    public static void main ( String[] args ) {
         int[] arr = {1, 4, 2, 10, 2, 3, 1, 0, 20};
         int k = 4;
         int n = arr.length;
@@ -311,7 +311,7 @@ public class Program {
         return 0;
     }
 
-    public static void main() {
+    public static void main ( String[] args ) {
         int[] arr = {15, 2, 4, 8, 9, 5, 10, 23};
         int n = arr.length;
         int sum = 23;
@@ -346,7 +346,7 @@ class Program {
     }
 
     // Driver's Code 
-    public static void main() {
+    public static void main ( String[] args ) {
         int N = 5, M = 15;
         bonacciseries(N, M);
     }
@@ -371,7 +371,7 @@ class Program {
     }
 
     // Driver code
-    public static void main() {
+    public static void main ( String[] args ) {
         int[] arr = {10, 4, 16, 20};
         int n = arr.length;
         int[] prefixSum = new int[n];
@@ -415,7 +415,7 @@ class EquilibriumIndex {
     }
 
     // Driver code 
-    public static void main() {
+    public static void main ( String[] args ) {
         EquilibriumIndex equi = new EquilibriumIndex();
         int arr[] = {-7, 1, 5, 2, -4, 3, 0};
         int arr_size = arr.length;
@@ -467,7 +467,7 @@ class Program {
     }
 
     // Driver program
-    static public void main() {
+    static public void main ( String[] args ) {
         int[] L = {1, 4, 9, 13, 21};
         int[] R = {15, 8, 12, 20, 30};
         int n = L.length;

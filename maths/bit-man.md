@@ -24,7 +24,7 @@ class Program
     } 
 
     // Driver code 
-    public static void main ( )  
+    public static void main ( String[] args )  
     { 
         int n = 5, k = 1; 
         isKthBitSet(n, k); 
@@ -50,7 +50,7 @@ class Program
     } 
 
     // Driver method 
-    public static void main( )  
+    public static void main ( String[] args )  
     { 
          System.out.println(isPowerOfTwo(31) ? "Yes" : "No"); 
          System.out.println(isPowerOfTwo(64) ? "Yes" : "No"); 
@@ -85,7 +85,7 @@ class countSetBits
     } 
 
     // driver program 
-    public static void main(String args[]) 
+    public static void main ( String[] args ) 
     { 
            int i = 9; 
         System.out.println(countSetBits(i)); 
@@ -113,7 +113,7 @@ class OddOccurance
         return res; 
     } 
 
-    public static void main( )  
+    public static void main ( String[] args )  
     { 
         OddOccurance occur = new OddOccurance(); 
         int ar[] = new int[]{2, 3, 5, 4, 5, 2, 4, 3, 5, 2, 4, 4, 2}; 
@@ -196,7 +196,7 @@ class Program
     } 
 
     // Driver code 
-    public static void main( ) 
+    public static void main ( String[] args ) 
     { 
         String bin = "1010"; 
         System.out.println(findLongestSub(bin)); 
@@ -243,7 +243,7 @@ public class Program {
     } 
 
     // Driver program to test printPowerSet 
-    public static void main ( ) 
+    public static void main ( String[] args ) 
     { 
         char []set = {'a', 'b', 'c'}; 
         printPowerSet(set, 3); 

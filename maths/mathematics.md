@@ -38,7 +38,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main ( String[] args ) {
 
     num := 123456
     len := 0
@@ -65,7 +65,7 @@ func countDigits(num int) int {
     return 1+countDigits(num/10)
 }
 
-func main() {
+func main ( String[] args ) {
 
     num := 123456
     fmt.Println(countDigits(num))
@@ -84,7 +84,7 @@ import (
 )
 
 
-func main() {
+func main ( String[] args ) {
 
     var num float64 = 123456
     fmt.Println(math.Floor(math.Log10(num)+1))
@@ -109,7 +109,7 @@ func gcd(m int, n int) int {
     return gcd(n%m, m)
 }
 
-func main() {
+func main ( String[] args ) {
     fmt.Println(gcd(28, 8))
 }
 ```
@@ -145,7 +145,7 @@ func firstNprime(number int) []int {
 
 }
 
-func main() {
+func main ( String[] args ) {
     fmt.Println(firstNprime(100))
 }
 ```

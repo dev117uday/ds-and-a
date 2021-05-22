@@ -35,7 +35,7 @@ class Graph {
         }
     }
 
-    public static void main( ) {
+    public static void main ( String[] args ) {
         int V = 4;
         ArrayList<ArrayList<Integer>> adj = new ArrayList<ArrayList<Integer>>(V);
 
@@ -101,7 +101,7 @@ class Graph {
         return false;
     }
 
-    public static void main( ) {
+    public static void main ( String[] args ) {
         int V = 6;
         ArrayList<ArrayList<Integer>> adj = new ArrayList<ArrayList<Integer>>(V);
 
@@ -167,7 +167,7 @@ class Graph {
         return false;
     }
 
-    public static void main( ) {
+    public static void main ( String[] args ) {
         int V = 6;
         ArrayList<ArrayList<Integer>> adj = new ArrayList<ArrayList<Integer>>(V);
 

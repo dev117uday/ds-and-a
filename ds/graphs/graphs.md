@@ -42,7 +42,7 @@ public class Graph {
     return s.toString();
   }
 
-  public static void main(String args[]) {
+  public static void main ( String[] args ) {
     Graph g = new Graph(4);
 
     g.addEdge(0, 1);
@@ -79,7 +79,7 @@ class Graph {
 		} 
 	} 
 
-	public static void main( ) 
+	public static void main ( String[] args ) 
 	{  
 		int V = 4; 
 		ArrayList<ArrayList<Integer> > adj = new ArrayList<ArrayList<Integer> >(V); 

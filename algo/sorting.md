@@ -40,7 +40,7 @@ class SelectionSort
     } 
 
     // Driver code to test above 
-    public static void main(String args[]) 
+    public static void main ( String[] args ) 
     { 
         SelectionSort ob = new SelectionSort(); 
         int arr[] = {64,25,12,22,11}; 
@@ -83,7 +83,7 @@ class Program {
         System.out.println();
     }
 
-    public static void main(String args[]) {
+    public static void main ( String[] args ) {
         int arr[] = { 13,12,11,10,6,5 };
         sort(arr);
         printArray(arr);
@@ -131,7 +131,7 @@ class QuickSort {
     }
 
     // Driver program
-    public static void main(String args[]) {
+    public static void main ( String[] args ) {
         int arr[] = { 10, 7, 8, 9, 1, 5 };
         int n = arr.length;
 
@@ -227,7 +227,7 @@ class MergeSort
     }
 
     // Driver code
-    public static void main(String args[])
+    public static void main ( String[] args )
     {
         int arr[] = { 12, 11, 13, 5, 6, 7 };
 
@@ -272,7 +272,7 @@ class BubbleSort
     } 
 
     // Driver method to test above 
-    public static void main(String args[]) 
+    public static void main ( String[] args ) 
     { 
         BubbleSort ob = new BubbleSort(); 
         int arr[] = {64, 34, 25, 12, 22, 11, 90}; 
@@ -350,7 +350,7 @@ class Radix {
     } 
 
     /*Driver Code*/
-    public static void main( ) 
+    public static void main ( String[] args ) 
     { 
         int arr[] = { 170, 45, 75, 90, 802, 24, 2, 66 }; 
         int n = arr.length; 
@@ -467,7 +467,7 @@ public class HeapSort {
     }
 
     // Driver code
-    public static void main(String args[])
+    public static void main ( String[] args )
     {
         int arr[] = { 12, 11, 13, 5, 6, 7 };
         int n = arr.length;

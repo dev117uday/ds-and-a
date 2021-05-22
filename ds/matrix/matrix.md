@@ -9,7 +9,7 @@ import java.lang.*;
 
 class Program
 {
-    public static void main ( ) {
+    public static void main ( String[] args ) {
         int mat[][] = new int[][]{};
         int ele = 90;
         
@@ -60,7 +60,7 @@ class Program {
 	} 
 
 	/* Driver program to test above function */
-	public static void main( ) 
+	public static void main ( String[] args ) 
 	{ 
 		int a[][] = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 1, 2, 3, 4 }, { 5, 6, 7, 8 } }; 
 
@@ -120,7 +120,7 @@ class Program {
 	} 
 
 	// driver program 
-	public static void main( ) 
+	public static void main ( String[] args ) 
 	{ 
 		int R = 3; 
 		int C = 6; 

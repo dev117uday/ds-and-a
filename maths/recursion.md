@@ -67,7 +67,7 @@ class Program
     } 
      
     // Driver code
-    public static void  main(String args[]) 
+    public static void  main ( String[] args ) 
     { 
         int n = 4; // Number of disks 
         towerOfHanoi(n, 'A', 'C', 'B'); // A, B and C are names of rods 
@@ -123,7 +123,7 @@ class Program
     } 
   
     // Driver Code 
-    public static void main(String args[]) 
+    public static void main ( String[] args ) 
     { 
         String str = "geeg"; 
   
@@ -160,7 +160,7 @@ class Program
     } 
   
     // Driver Program to test above function 
-    public static void main( ) 
+    public static void main ( String[] args ) 
     { 
     int n = 14; 
     int k = 2; 
@@ -188,7 +188,7 @@ class sum_of_digits
     } 
   
     // Driven Program to check above 
-    public static void main(String args[]) 
+    public static void main ( String[] args ) 
     { 
         int num = 12345; 
         int result = sum_of_digit(num); 
@@ -222,7 +222,7 @@ class Program
         return 1+res;
     }
     
-    public static void main ( ) 
+    public static void main ( String[] args ) 
     {
         int n = 25;
         int a = 11, b = 12, c = 13;
@@ -269,7 +269,7 @@ static void powerSet(String str, int index,
 }  
   
 // Driver code  
-public static void main( )  
+public static void main ( String[] args )  
 { 
     String str = "abc";  
         int index = 0; 
