@@ -1,35 +1,36 @@
 # Table of contents
 
 * [Welcome to DS & Algo Notes](README.md)
-* [ds](ds/README.md)
-  * [graphs](ds/graphs/README.md)
-    * [DFS vs BFS](ds/graphs/dfs-vs-bfs.md)
-  * [ll](ds/ll/README.md)
+* [Data Structure](ds/README.md)
+
+* [Graphs](ds/graphs/README.md)
+
+* [LinkedList](ds/ll/README.md)
     * [Singly LinkedList](ds/ll/sll.md)
     * [Doubly LinkedList](ds/ll/dll.md)
     * [cll](ds/ll/cll.md)
     * [LinkedList](ds/ll/ll.md)
-  * [array](ds/array/README.md)
-    * [Array](ds/array/array.md)
-  * [stack](ds/stack/README.md)
-    * [Stack Data Structure](ds/stack/stack.md)
-  * [tree](ds/tree/README.md)
+    * 
+* [Array](ds/array/README.md)
+
+* [Stack](ds/stack/README.md)
+
+* [Tree](ds/tree/README.md)
     * [Heap](ds/tree/heap.md)
     * [Binary Search Tree](ds/tree/bst.md)
     * [Tree](ds/tree/tree.md)
-  * [queue](ds/queue/README.md)
-    * [Queue](ds/queue/queue.md)
-  * [string](ds/string/README.md)
-    * [String](ds/string/string.md)
-  * [matrix](ds/matrix/README.md)
-    * [Matrix](ds/matrix/matrix.md)
-* [maths](maths/README.md)
+
+* [Queue](ds/queue/README.md)
+* [String](ds/string/README.md)
+* [Matrix](ds/matrix/README.md)
+
+* [Maths](maths/README.md)
   * [Recursion](maths/recursion.md)
   * [Bit Manipulation](maths/bit-man.md)
-  * [Mathematics](maths/mathematics.md)
   * [Hashing](maths/hashing.md)
   * [Theory](maths/theory.md)
-* [algo](algo/README.md)
+
+* [Algo](algo/README.md)
   * [Searching](algo/searching.md)
   * [Sorting](algo/sorting.md)
 

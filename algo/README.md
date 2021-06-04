@@ -1,2 +1,5 @@
-# algo
+# Algorithms
+
+- Searching
+- Sorting
 

@@ -1,6 +1,4 @@
-# cll
-
-## Circular Linked List
+# Circular Linked List
 
 ```java
 public class Program {
