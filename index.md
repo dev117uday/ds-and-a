@@ -25,7 +25,7 @@
 * [Queue](ds/queue/queue.md)
 
 * [Tree](ds/tree/tree.md)
-  * [BST]()
+  * [BST](ds/tree/bst.md)
 
 * Graphs
   * [DFS vs BFS](ds/graphs/dfs-vs-bfs.md)
