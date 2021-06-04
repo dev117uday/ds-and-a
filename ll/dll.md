@@ -1,3 +1,7 @@
+---
+description: Train
+---
+
 # Doubly LinkedList
 
 ```java

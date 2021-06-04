@@ -1,3 +1,7 @@
+---
+description: not crypto
+---
+
 # Hashing
 
 ## Largest Subarray with Sum Zero

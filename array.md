@@ -1,3 +1,7 @@
+---
+description: Vectors are better
+---
+
 # Array
 
 ## Reverse an array

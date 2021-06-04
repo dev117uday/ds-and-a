@@ -1,3 +1,7 @@
+---
+description: cant find my socks
+---
+
 # Searching
 
 ## Left most index of an element in an array

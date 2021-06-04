@@ -1,3 +1,7 @@
+---
+description: School Days
+---
+
 # Queue
 
 ## Implementation of Queue using Array
