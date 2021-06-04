@@ -2,7 +2,7 @@
 description: Mathematical Questions
 ---
 
-# Mathematics
+# Maths
 
 ## Basic Maths
 
@@ -149,6 +149,4 @@ func main ( String[] args ) {
     fmt.Println(firstNprime(100))
 }
 ```
-
-
 
