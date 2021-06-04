@@ -1,4 +1,4 @@
-# Table of contents
+# Welcome to DS & Algo Notes
 
 ## Tracks
 
@@ -20,12 +20,10 @@
   * [Singly LinkedList](ds/ll/ll.md)
   * [Doubly LinkedList](ds/ll/dll.md)
   * [Circular LinkedList](ds/ll/cll.md)
-
 * [Stack](ds/stack/stack.md)
 * [Queue](ds/queue/queue.md)
-
 * [Tree](ds/tree/tree.md)
   * [BST](ds/tree/bst.md)
-
 * Graphs
   * [DFS vs BFS](ds/graphs/dfs-vs-bfs.md)
+

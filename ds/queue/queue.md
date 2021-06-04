@@ -1,7 +1,8 @@
 # Queue
 
 ## Implementation of Queue using Array
-#### Special trick (in order to maintain queue in array, make it circular by using %capacity)
+
+#### Special trick \(in order to maintain queue in array, make it circular by using %capacity\)
 
 ```java
 import java.lang.*;
@@ -85,7 +86,7 @@ public class Main {
 }
 ```
 
-## Implementing stack using queue 
+## Implementing stack using queue
 
 ```java
 import java.util.*;
@@ -159,11 +160,13 @@ class Main {
 
         System.out.println("current size: " + s.size());
     }
-} 
+}
 ```
 
 ## Reversing a Queue
+
 ### Recursively
+
 ```java
 import java.util.LinkedList;
 import java.util.*;
@@ -205,7 +208,9 @@ public class Main {
 ```
 
 ## Reversing a Queue
+
 ### Iteratively
+
 ```java
 import java.util.LinkedList;
 import java.util.Queue;
@@ -246,7 +251,7 @@ public class Main {
         reversequeue();
         Print();
     }
-} 
+}
 ```
 
 ## Generate numbers with given digits
@@ -282,5 +287,6 @@ public class Main {
 
         printFirstN(n);
     }
-} 
+}
 ```
+

@@ -44,7 +44,7 @@ class Main {
 }
 ```
 
-## Two stacks in an array(Useless Question)
+## Two stacks in an array\(Useless Question\)
 
 ```java
         import java.io.*;
@@ -126,10 +126,9 @@ class Main {
 }
 ```
 
-## K Stacks in an array(UseLess Question)
+## K Stacks in an array\(UseLess Question\)
 
 ```java
-
 class kStacks {
     int arr[];
     int top[];
@@ -288,7 +287,7 @@ import java.io.*;
 import java.util.*;
 
 class GFG {
-    
+
     public static ArrayList<Integer> nextGreater(int arr[],int n){
         ArrayList<Integer> v=new ArrayList<>();
         Stack <Integer> s=new Stack<>();
@@ -303,20 +302,20 @@ class GFG {
         Collections.reverse(v);
         return v;
     }
-	public static void main (String[] args) {
-	
-	    int[] arr=new int[]{5,15,10,8,6,12,9,18};
-        
+    public static void main (String[] args) {
+
+        int[] arr=new int[]{5,15,10,8,6,12,9,18};
+
         for(int x: nextGreater(arr,arr.length)){
             System.out.print(x + " ");   
         }  
-	  
-	}
-	
+
+    }
+
 }
 ```
 
-## Largest Rectangular Area in a Histogram (Part 1)
+## Largest Rectangular Area in a Histogram \(Part 1\)
 
 ```java
 import java.io.*;
@@ -369,7 +368,7 @@ class GFG {
 }
 ```
 
-## Largest Rectangular Area in a Histogram (Part 2)
+## Largest Rectangular Area in a Histogram \(Part 2\)
 
 ```java
 import java.io.*;
@@ -409,7 +408,7 @@ class GFG {
 }
 ```
 
-## Largest Rectangle with all 1's (in a matrix)
+## Largest Rectangle with all 1's \(in a matrix\)
 
 ```java
 import java.io.*;
@@ -481,55 +480,56 @@ class GFG {
         };
         System.out.print("Area of maximum rectangle is " + maxRectangle(R, C, A));
     }
-} 
+}
 ```
 
-## Stack with getMin() in O(1)
+## Stack with getMin\(\) in O\(1\)
+
 ```java
 import java.io.*;
 import java.util.*;
 
 class MyStack {
- 
+
     Stack<Integer> ms;
     Stack<Integer> as;
-    
+
     MyStack(){
         ms=new Stack<>();
         as=new Stack<>();
     }
- 
+
 void push(int x) {
- 
+
       if(ms.isEmpty() ) {
           ms.add(x);as.add(x);return;
       }
-      
+
       ms.add(x);
-      
+
       if(as.peek()>=ms.peek())
         as.add(x);
    }
- 
+
 void pop() {
- 
+
     if(as.peek()==ms.peek())
         as.pop();
     ms.pop();
-    
+
    }
 
 int top() {
      return ms.peek();
    }
- 
+
 int getMin() {
       return as.peek();
    }
 }
 
 class GFG {
-  
+
     public static void main(String[] args) 
     { 
         MyStack s=new MyStack();;
@@ -538,14 +538,15 @@ class GFG {
         s.push(8);
         s.push(1);
         s.pop();
-     
+
         System.out.print(" Minimum Element from Stack: " + s.getMin() );
-  
+
     } 
-} 
+}
 ```
 
-## Design a Stack with getMin() in O(1) Space
+## Design a Stack with getMin\(\) in O\(1\) Space
+
 ### Assuming all Elements Positive
 
 ```java
@@ -610,7 +611,7 @@ class GFG {
 
         System.out.print(" Minimum Element from Stack: " + s.getMin());
     }
-} 
+}
 ```
 
 ### Handles Negatives
@@ -677,6 +678,6 @@ class GFG {
 
         System.out.print(" Minimum Element from Stack: " + s.getMin() );
     }
-} 
+}
 ```
 

@@ -5,7 +5,7 @@
 ```java
 import java.io.*;
 class Program {
-    
+
     static void reverse(int arr[], int n)
     {
         for(int i = 0; i < n/2; i++)
@@ -15,14 +15,14 @@ class Program {
             arr[n-i-1] = temp;
         }
     }
-	public static void  main (String[] args) {
-		int arr[] = new int[]{2, 8, 7, 10, 5};
-		int n = arr.length;
-		
-		reverse(arr, n);
-		for(int i = 0; i < n; i++)
-		  System.out.print(arr[i] + " ");
-	}
+    public static void  main (String[] args) {
+        int arr[] = new int[]{2, 8, 7, 10, 5};
+        int n = arr.length;
+
+        reverse(arr, n);
+        for(int i = 0; i < n; i++)
+          System.out.print(arr[i] + " ");
+    }
 }
 ```
 
@@ -34,7 +34,7 @@ import java.util.*;
 import java.lang.*;
 
 class Program {
-    
+
     static void reverse(int arr[], int start, int end)
     {
         int temp = 0;
@@ -53,16 +53,16 @@ class Program {
         reverse(arr, d, n-1);
         reverse(arr, 0, n-1);
     }
-	public static void  main (String[] args) 
-	{
-	    int arr[] = new int[]{2, 8, 7, 10, 5};
-	    int n = arr.length;
-	    int d = 3;
-	    
-	    rotateByd(arr, d, n);
-	    for(int i = 0; i < n; i++)
-	     System.out.print(arr[i] + " ");
-	}
+    public static void  main (String[] args) 
+    {
+        int arr[] = new int[]{2, 8, 7, 10, 5};
+        int n = arr.length;
+        int d = 3;
+
+        rotateByd(arr, d, n);
+        for(int i = 0; i < n; i++)
+         System.out.print(arr[i] + " ");
+    }
 }
 ```
 
@@ -71,34 +71,33 @@ class Program {
 ```java
 class LeadersInArray 
 { 
-	/* Java Function to print leaders in an array */
-	void printLeaders(int arr[], int size) 
-	{ 
-		int max_from_right = arr[size-1]; 
+    /* Java Function to print leaders in an array */
+    void printLeaders(int arr[], int size) 
+    { 
+        int max_from_right = arr[size-1]; 
 
-		/* Rightmost element is always leader */
-		System.out.print(max_from_right + " "); 
-	
-		for (int i = size-2; i >= 0; i--) 
-		{ 
-			if (max_from_right < arr[i]) 
-			{		 
-			max_from_right = arr[i]; 
-			System.out.print(max_from_right + " "); 
-			} 
-		}	 
-	} 
+        /* Rightmost element is always leader */
+        System.out.print(max_from_right + " "); 
 
-	/* Driver program to test above functions */
-	public static void main ( String[] args ) 
-	{ 
-		LeadersInArray lead = new LeadersInArray(); 
-		int arr[] = new int[]{16, 17, 4, 3, 5, 2}; 
-		int n = arr.length; 
-		lead.printLeaders(arr, n); 
-	} 
-} 
+        for (int i = size-2; i >= 0; i--) 
+        { 
+            if (max_from_right < arr[i]) 
+            {         
+            max_from_right = arr[i]; 
+            System.out.print(max_from_right + " "); 
+            } 
+        }     
+    } 
 
+    /* Driver program to test above functions */
+    public static void main ( String[] args ) 
+    { 
+        LeadersInArray lead = new LeadersInArray(); 
+        int arr[] = new int[]{16, 17, 4, 3, 5, 2}; 
+        int n = arr.length; 
+        lead.printLeaders(arr, n); 
+    } 
+}
 ```
 
 ## Trapping Rainwater
@@ -149,8 +148,7 @@ class Program {
         System.out.println("Maximum water that can be accumulated is " +
                 findWater(arr.length));
     }
-} 
-
+}
 ```
 
 ## Stock buy and sell
@@ -211,7 +209,7 @@ class StockBuySell {
         else
             for (int j = 0; j < count; j++)
                 System.out.println("Buy on day: " + sol.get(j).buy
-                        + "	 "
+                        + "     "
                         + "Sell on day : " + sol.get(j).sell);
 
         return;
@@ -273,7 +271,7 @@ class Program {
         int n = arr.length;
         System.out.println(maxSum(arr, n, k));
     }
-} 
+}
 ```
 
 ## Find subarray with given sum
@@ -350,7 +348,7 @@ class Program {
         int N = 5, M = 15;
         bonacciseries(N, M);
     }
-} 
+}
 ```
 
 ## Prefix Sum array
@@ -422,8 +420,7 @@ class EquilibriumIndex {
         System.out.println("First equilibrium index is " +
                 equi.equilibrium(arr, arr_size));
     }
-} 
-
+}
 ```
 
 ## Maximum occurred integer in N ranges
@@ -473,5 +470,6 @@ class Program {
         int n = L.length;
         System.out.println(maximumOccuredElement(L, R, n));
     }
-}  
+}
 ```
+

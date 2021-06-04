@@ -1,6 +1,7 @@
 # Tree
 
 ## Simple Tree Construction
+
 ```java
 import java.lang.*;
 
@@ -27,6 +28,7 @@ class Main {
 ```
 
 ## In Order Tree Traversal
+
 ```java
 import java.lang.*;
 
@@ -60,10 +62,11 @@ class Main {
             inorder(root.right);
         }
     }
-} 
+}
 ```
 
 ## Pre Order Traversal
+
 ```java
 import java.lang.*;
 
@@ -102,6 +105,7 @@ class Main {
 ```
 
 ## Post Order Traversal
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -179,6 +183,7 @@ class Main {
 ```
 
 ## Print Nodes at K distance
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -224,6 +229,7 @@ class Main {
 ```
 
 ## Level Order Traversal
+
 ```java
 import java.util.*;
 import java.lang.*;
@@ -270,7 +276,8 @@ class Main {
 }
 ```
 
-## Level Order Traversal Line by Line (Part 1)
+## Level Order Traversal Line by Line \(Part 1\)
+
 ```java
 import java.util.*;
 import java.lang.*;
@@ -323,7 +330,8 @@ class Main {
 }
 ```
 
-## Level Order Traversal Line by Line (Part 2)
+## Level Order Traversal Line by Line \(Part 2\)
+
 ```java
 import java.util.*;
 import java.lang.*;
@@ -375,6 +383,7 @@ class Main {
 ```
 
 ## Size of Binary Tree
+
 ```java
 import java.lang.*;
 
@@ -450,7 +459,8 @@ class Main {
 }
 ```
 
-## Print Left View of Tree ( Recursively )
+## Print Left View of Tree \( Recursively \)
+
 ```java
 import java.lang.*;
 
@@ -487,7 +497,7 @@ class Main {
 }
 ```
 
-## Print Left View of Tree ( Iteratively )
+## Print Left View of Tree \( Iteratively \)
 
 ```java
 import java.util.*;
@@ -539,6 +549,7 @@ class Main {
 ```
 
 ## Children Sum Property
+
 ```java
 import java.lang.*;
 
@@ -580,7 +591,8 @@ class Main {
 }
 ```
 
-## Check if tree is balanced 
+## Check if tree is balanced
+
 ```java
 import java.lang.*;
 
@@ -629,6 +641,7 @@ class Main {
 ```
 
 ## Max Width Binary Tree
+
 ```java
 import java.util.*;
 import java.lang.*;
@@ -679,6 +692,7 @@ class Main {
 ```
 
 ## Convert Binary Tree to Doubly Linked List
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -736,6 +750,7 @@ class Main {
 ```
 
 ## Construct Binary Tree from Inorder and Preorder
+
 ```java
 import java.lang.*;
 
@@ -790,7 +805,8 @@ class Main {
 }
 ```
 
-## Tree Traversal in Spiral Form (First Method)
+## Tree Traversal in Spiral Form \(First Method\)
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -851,7 +867,7 @@ class Main {
 }
 ```
 
-## Tree Traversal in Spiral Form (Second Method)
+## Tree Traversal in Spiral Form \(Second Method\)
 
 ```java
 import java.util.*;
@@ -917,10 +933,11 @@ class Main {
             }
         }
     }
-} 
+}
 ```
 
 ## Diameter of a Binary Tree
+
 ```java
 import java.lang.*;
 
@@ -966,6 +983,7 @@ class Main {
 ```
 
 ## LCA of Binary Tree
+
 ```java
 import java.lang.*;
 
@@ -1013,6 +1031,7 @@ class Main {
 ```
 
 ## Burn a Binary Tree from a Leaf
+
 ```java
 import java.lang.*;
 
@@ -1077,6 +1096,7 @@ class Main {
 ```
 
 ## Count nodes in a Complete Binary Tree
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -1095,18 +1115,18 @@ class Node
 
 
 class GFG { 
-    
+
     public static void main(String args[]) 
     { 
         Node root=new Node(10);
-    	root.left=new Node(20);
-    	root.right=new Node(30);
-    	root.right.left=new Node(40);
-    	root.right.right=new Node(50);
-    	
-    	System.out.print(countNode(root));
+        root.left=new Node(20);
+        root.right=new Node(30);
+        root.right.left=new Node(40);
+        root.right.right=new Node(50);
+
+        System.out.print(countNode(root));
     } 
-    
+
     public static int countNode(Node root){
         int lh=0,rh=0;
         Node curr=root;
@@ -1125,10 +1145,11 @@ class GFG {
             return 1+countNode(root.left)+countNode(root.right);
         }
     } 
-} 
+}
 ```
 
 ## Serialize a Binary Tree
+
 ```java
 import java.util.*;
 import java.lang.*;
@@ -1174,6 +1195,7 @@ class Main {
 ```
 
 ## DeSerialize a Binary Tree
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -1245,3 +1267,4 @@ class Main {
 ```
 
 // TODO : iterative pre order traversal and efficient solution to it
+

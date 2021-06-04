@@ -20,10 +20,11 @@ class Program {
             }
         }
     }
-} 
+}
 ```
 
 ## Check Palindrome
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -49,10 +50,11 @@ class Program {
         String str = "geeksrorgeeks";
         System.out.println(isPalindrome(str));
     }
-} 
+}
 ```
 
 ## Check string is sub sequence of one another
+
 ```java
 public class Program {
 
@@ -82,6 +84,7 @@ public class Program {
 ```
 
 ## Check if two strings are anagram
+
 ```java
 public class Program {
 
@@ -118,6 +121,7 @@ public class Program {
 ```
 
 ## Leftmost Repeating character
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -142,15 +146,16 @@ class Program {
         System.out.println("Index of leftmost repeating character:");
         System.out.println(leftMost(str));
     }
-} 
+}
 ```
 
 ## Leftmost non repeating character
+
 ```java
 import java.util.*;
 import java.io.*;
 import java.lang.*;
-  
+
 class Program { 
        static final int CHAR=256;
     static int nonRep(String str) 
@@ -164,23 +169,24 @@ class Program {
     }
     return -1;
     } 
-  
+
     public static void main ( String[] args ) 
     {   String str = "geeksforgeeks";
         System.out.println("Index of leftmost non-repeating element:");
         System.out.println(nonRep(str));  
     } 
-} 
+}
 ```
 
 ## Reverse words in string
+
 ```java
 import java.util.*;
 import java.io.*;
 import java.lang.*;
-  
+
 class Program { 
-       
+
     static void reverse(char str[],int low, int high){
     while(low<=high){
         //swap
@@ -204,7 +210,7 @@ class Program {
     reverse(str,start,n-1);
     reverse(str,0,n-1);
     }
-  
+
     public static void main ( String[] args ) 
     {   String s = "Welcome to Program";int n=s.length();
         char[] str = s.toCharArray();
@@ -212,10 +218,11 @@ class Program {
         reverseWords(str,n);
         System.out.println(str);  
     } 
-} 
+}
 ```
 
 ## Pattern Searching in String for ALL CASES
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -243,10 +250,11 @@ class Program {
         System.out.print("All index numbers where pattern found: ");
         patSearchinng(txt, pat);
     }
-} 
+}
 ```
 
 ## Pattern Searching String in DISTINCT
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -279,10 +287,11 @@ class Program {
         System.out.print("All index numbers where pattern found: ");
         patSearchinng(txt, pat);
     }
-} 
+}
 ```
 
 ## Rapin Karp Alogrithm
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -332,10 +341,11 @@ class Program {
         System.out.print("All index numbers where pattern found: ");
         RBSearch(pat, txt, 4, 15);
     }
-} 
+}
 ```
 
-## KMP Agorithm (Part 1 : Constructing LPS Array)
+## KMP Agorithm \(Part 1 : Constructing LPS Array\)
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -372,18 +382,19 @@ class Program {
             System.out.print(lps[i] + " ");
         }
     }
-} 
+}
 ```
 
-## KMP Agorithm (Part 2 : Complete Algorithm)
+## KMP Agorithm \(Part 2 : Complete Algorithm\)
+
 ```java
 import java.util.*;
 import java.io.*;
 import java.lang.*;
-  
+
 class Program { 
 
-   
+
 
     static void fillLPS(String str, int lps[]){
         int n=str.length(),len=0;
@@ -406,7 +417,7 @@ class Program {
         int i=0,j=0;
         while(i<N){
             if(pat.charAt(j)==txt.charAt(i)){i++;j++;}
-    
+
             if (j == M) { 
                 System.out.println("Found pattern at index " + (i - j));
                 j = lps[j - 1]; 
@@ -423,11 +434,12 @@ class Program {
     {   String txt = "ababcababaad",pat="ababa";
         KMP(pat,txt);
     }  
-     
-} 
+
+}
 ```
 
 ## Check whether strings is rotated
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -450,10 +462,11 @@ class Program {
             System.out.println("Strings are not rotations of each other");
         }
     }
-} 
+}
 ```
 
 ## Check if Strings are Rotations
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -476,10 +489,11 @@ class Program {
             System.out.println("Strings are not rotations of each other");
         }
     }
-} 
+}
 ```
 
 ## Lexicographic Rank of a String
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -514,10 +528,11 @@ class Program {
         String str = "STRING";
         System.out.print(lexRank(str));
     }
-} 
+}
 ```
 
 ## Longest Substring with Distinct Characters
+
 ```java
 import java.util.*;
 import java.io.*;

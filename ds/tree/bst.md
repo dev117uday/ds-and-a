@@ -1,6 +1,7 @@
 # Binary Search Tree
 
 ## Search in BST
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -50,7 +51,8 @@ class Main {
 }
 ```
 
-## Search in BST ( recursively )
+## Search in BST \( recursively \)
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -97,10 +99,11 @@ class Main {
         }
         return false;
     }
-} 
+}
 ```
 
-## Insert BST ( Recursively )
+## Insert BST \( Recursively \)
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -149,10 +152,11 @@ class Main {
             inorder(root.right);
         }
     }
-} 
+}
 ```
 
-## Insert in BST ( Iteratively )
+## Insert in BST \( Iteratively \)
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -212,10 +216,11 @@ class Main {
             inorder(root.right);
         }
     }
-} 
+}
 ```
 
-## Delete in BST 
+## Delete in BST
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -282,10 +287,11 @@ class Main {
             inorder(root.right);
         }
     }
-} 
+}
 ```
 
-## Floor in BST 
+## Floor in BST
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -332,10 +338,11 @@ class Main {
         }
         return res;
     }
-} 
+}
 ```
 
 ## Ceil in BST
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -381,14 +388,17 @@ class Main {
         }
         return res;
     }
-} 
+}
 ```
 
 ## Revisit AVL Tree
+
 ## Revisit Red Black Tree
 
 ## TreeSet In java
-### Add | Contains | Iterator
+
+### Add \| Contains \| Iterator
+
 ```java
 import java.util.*;
 
@@ -419,6 +429,7 @@ class TreeSetExample {
     }
 }
 ```
+
 ### Add+Remove
 
 ```java
@@ -447,7 +458,8 @@ class TreeSetExample {
 }
 ```
 
-### Lower | Higher | Floor | Ceiling
+### Lower \| Higher \| Floor \| Ceiling
+
 ```java
 import java.util.*;
 
@@ -482,7 +494,9 @@ class TreeSetExample {
 ```
 
 ## TreeMap in Java
+
 ### Example
+
 ```java
 import java.util.*;
 
@@ -508,10 +522,10 @@ class GFG {
         for (Map.Entry<Integer, String> e : t.entrySet())
             System.out.println(e.getKey() + " " + e.getValue());
     }
-} 
+}
 ```
 
-### HigherKey | LowerKey | FloorKey | CeilingKey
+### HigherKey \| LowerKey \| FloorKey \| CeilingKey
 
 ```java
 import java.util.*;
@@ -542,10 +556,11 @@ class GFG {
         // greatest key >= passed key i.e., 10
         System.out.println(t.ceilingKey(10));
     }
-} 
+}
 ```
 
 ### GetValue
+
 ```java
 import java.util.*;
 
@@ -577,10 +592,11 @@ class GFG {
         // with the least key >= to the given key
         System.out.println(t.ceilingEntry(10).getValue());
     }
-} 
+}
 ```
 
 ## Ceiling on left side in an array
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -607,10 +623,11 @@ class GFG {
             s.add(arr[i]);
         }
     }
-} 
+}
 ```
 
 ## Find Kth Smallest in BST
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -675,6 +692,7 @@ class Gfg {
 ```
 
 ## Check for BST
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -781,6 +799,7 @@ class Gfg {
     }
 }
 ```
+
 ## Pair Sum with given BST
 
 ```java
@@ -878,6 +897,7 @@ class Gfg {
 ```
 
 ## Vertical Traversal of Binary Tree
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -946,7 +966,8 @@ class Gfg {
 ```
 
 ## Top View of Binary Tree
-```java 
+
+```java
 import java.util.*;
 import java.io.*;
 import java.lang.*;
@@ -1006,6 +1027,7 @@ class Gfg {
 ```
 
 ## Bottom View of Binary Tree
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -1063,3 +1085,4 @@ class Gfg {
     }
 }
 ```
+
