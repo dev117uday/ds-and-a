@@ -1,3 +1,7 @@
+---
+description: Just fancy character array
+---
+
 # String
 
 ## Print frequencies of characters of string of lower case alphabets

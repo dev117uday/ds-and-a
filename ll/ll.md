@@ -1,3 +1,7 @@
+---
+description: Simple
+---
+
 # LinkedList
 
 ## Linked List Implementation
