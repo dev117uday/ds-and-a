@@ -3,22 +3,27 @@ description: Garbage
 ---
 
 # Heap
+
 children elements are smaller/bigger than parent
 
 ## Types of Heaps
-- Min Heap : Highest priority items assigned the lowest value
-- Max Heap : Highest priority items assigned the highest value
+
+* Min Heap : Highest priority items assigned the lowest value
+* Max Heap : Highest priority items assigned the highest value
 
 ## Applications of Heap
-- Used to implement HeapSort
-- Used to implement PriorityQueue
+
+* Used to implement HeapSort
+* Used to implement PriorityQueue
 
 ## Formulae's
-- left of element : (2*i+1)
-- right of element : (2*i+2)
-- parent of element : (i-1)/2
 
-## Binary Heap Implementation (Array)
+* left of element : \(2\*i+1\)
+* right of element : \(2\*i+2\)
+* parent of element : \(i-1\)/2
+
+## Binary Heap Implementation \(Array\)
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -55,10 +60,11 @@ class Main {
 
     }
 
-} 
+}
 ```
 
-## Binary Heap Insert (Array) : MinHeap
+## Binary Heap Insert \(Array\) : MinHeap
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -113,11 +119,13 @@ class Test {
         h.insert(20);
     }
 
-} 
+}
 ```
 
-## Binary Heap (Heapify and Extract) : MinHeap
+## Binary Heap \(Heapify and Extract\) : MinHeap
+
 **Extract operation is super important**
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -205,10 +213,11 @@ class Test {
         System.out.print(h.extractMin());
     }
 
-} 
+}
 ```
 
-## Binary Heap (Decrease Key | Delete)
+## Binary Heap \(Decrease Key \| Delete\)
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -314,10 +323,11 @@ class Test {
         System.out.println(h.extractMin());
     }
 
-} 
+}
 ```
 
-## Binary Heap ( Build Heap ) IMPORTANT
+## Binary Heap \( Build Heap \) IMPORTANT
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -363,7 +373,7 @@ class Test {
                 minHeapify(smallest);
             }
         }
-		// IMPORTANT
+        // IMPORTANT
         public void buildHeap() {
             for (int i = (size - 2) / 2; i >= 0; i--)
                 minHeapify(i);
@@ -375,10 +385,11 @@ class Test {
         MinHeap h = new MinHeap(11);
     }
 
-} 
+}
 ```
 
-## Heap Sort 
+## Heap Sort
+
 ```java
 import java.lang.*;
 
@@ -443,7 +454,8 @@ public class Main {
 }
 ```
 
-## Priority Queue (Min Heap Edition)
+## Priority Queue \(Min Heap Edition\)
+
 ```java
 // Java program to demonstrate working of
 // PriorityQueue in Java
@@ -473,10 +485,10 @@ class Main {
         System.out.println(pq.peek());
     }
 }
-
 ```
 
-## Priority Queue (Max Heap Edition)
+## Priority Queue \(Max Heap Edition\)
+
 ```java
 // Java program to demonstrate working of
 // PriorityQueue in Java
@@ -519,6 +531,7 @@ class Main {
 ```
 
 ## K-Sorted Array
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -559,10 +572,11 @@ class Main {
         System.out.println("Following is sorted array");
         printArray(arr, n);
     }
-}  
+}
 ```
 
 ## Buy Maximum Items with the given sum
+
 ```java
 import java.util.*;
 import java.io.*;
@@ -593,10 +607,11 @@ class Main {
 
     }
 
-} 
+}
 ```
 
 ## Kth Largest Element
+
 ```java
 import java.io.*;
 import java.util.*;
@@ -638,6 +653,7 @@ class GFG {
 ```
 
 ## K Closet Element
+
 ```java
 import java.io.*;
 import java.util.*;
@@ -679,6 +695,7 @@ class GFG {
 ```
 
 ## Merge K Sorted Arrays
+
 ```java
 import java.io.*;
 import java.util.*;
@@ -752,6 +769,7 @@ class GFG {
 ```
 
 ## Median of Stream
+
 ```java
 import java.io.*;
 import java.util.*;
@@ -795,11 +813,11 @@ public static void printMedians(int arr[],int n){
         }
     }
 }
-     
+
     public static void main(String args[])
     {
         int keys[] = { 12, 15, 10, 5, 8, 7, 16};
-    
+
         printMedians(keys,7);
     }
 }

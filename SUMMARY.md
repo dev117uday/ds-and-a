@@ -1,7 +1,8 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Graphs](graphs.md)
+* [Graphs](graphs/README.md)
+  * [Graph](graphs/graph.md)
 * [LinkedList](ll/README.md)
   * [Singly LinkedList](ll/sll.md)
   * [Doubly LinkedList](ll/dll.md)
