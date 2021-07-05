@@ -1,6 +1,7 @@
 # Graph
 
 ## Adjacency List implementation in Java
+
 ```java
 import java.util.*;
 
@@ -39,6 +40,7 @@ class Graph {
 ```
 
 ## BFS Traversal of graph
+
 ```java
 import java.util.*;
 
@@ -93,7 +95,8 @@ class Graph {
 }
 ```
 
-## B.F.S on disconnected graphs
+## BFS on disconnected graphs
+
 ```java
 import java.util.*;
 
@@ -154,8 +157,8 @@ class Graph {
 }
 ```
 
-## Print number of islands in a graph (or number of connected components in a graph) 
-### BFS
+## BFS : Print number of islands in a graph \(or number of connected components in a graph\)
+
 ```java
 import java.util.*;
 
@@ -219,6 +222,7 @@ class Graph {
 ```
 
 ## Depth First Search
+
 ```java
 import java.util.*;
 
@@ -282,6 +286,7 @@ class Graph {
 ```
 
 ## DFS for disconnected graphs
+
 ```java
 import java.util.*;
 
@@ -332,6 +337,7 @@ class Graph {
 ```
 
 ## DFS : For finding connected components
+
 ```java
 import java.util.*;
 
@@ -383,7 +389,8 @@ class Graph {
 }
 ```
 
-## Shortest Path in an Unweighted Graph
+## BFS : Shortest Path in an Unweighted Graph
+
 ```java
 import java.util.*;
 
@@ -443,7 +450,8 @@ class Graph {
 }
 ```
 
-## Detect Cycle in Undirected Graph
+## DFS : Detect Cycle in Undirected Graph
+
 ```java
 import java.util.*;
 
@@ -504,7 +512,8 @@ class Graph {
 }
 ```
 
-## Part 1 : Detect Cycle in a Directed Graph (DFS)
+## DFS : Part 1 : Detect Cycle in a Directed Graph
+
 ```java
 import java.util.*;
 
@@ -569,7 +578,8 @@ class Graph {
 }
 ```
 
-## Topological Sorting (Kahn's BFS Based Algortihm)
+## Topological Sorting \(Kahn's BFS Based Algortihm\)
+
 ```java
 import java.util.*;
 
@@ -621,7 +631,8 @@ class Graph {
 }
 ```
 
-## Part 2 : Detect Cycle in a Directed Graph ( using kahn's Algorithm )
+## Part 2 : Detect Cycle in a Directed Graph \( using kahn's Algorithm \)
+
 ```java
 import java.util.*;
 
@@ -679,7 +690,8 @@ class Graph {
 }
 ```
 
-## Topological Sorting (DFS Based Algorithm)
+## Topological Sorting \(DFS Based Algorithm\)
+
 ```java
 import java.util.*;
 
@@ -736,6 +748,7 @@ class Graph {
 ```
 
 ## Shortest Path in Directed Acyclic Graph
+
 ```java
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -849,6 +862,7 @@ class Main {
 ```
 
 ## Prim's Algorithm / Minimum Spanning Tree
+
 ```java
 import java.util.*;
 import java.lang.*;
@@ -892,6 +906,7 @@ class Gfg {
 ```
 
 ## Dijkstra's Shortest Path Algorithm
+
 ```java
 import java.util.*;
 import java.lang.*;
@@ -937,6 +952,7 @@ class Gfg {
 ```
 
 ## Kosaraju's Algorithm Part 1
+
 ```java
 import java.io.*;
 import java.util.*;
@@ -1036,6 +1052,7 @@ class Graph {
 ```
 
 ## Bellman Ford Shortest Path Algorithm
+
 ```java
 import java.util.*;
 import java.lang.*;
@@ -1135,6 +1152,7 @@ class Graph {
 ```
 
 ## Articulation Point
+
 ```java
 import java.io.*; 
 import java.util.*; 
@@ -1143,199 +1161,201 @@ import java.util.LinkedList;
 
 class Graph 
 { 
-	private int V; 
- 
-	private LinkedList<Integer> adj[]; 
-	int time = 0; 
-	static final int NIL = -1; 
+    private int V; 
 
-	Graph(int v) 
-	{ 
-		V = v; 
-		adj = new LinkedList[v]; 
-		for (int i=0; i<v; ++i) 
-			adj[i] = new LinkedList(); 
-	} 
+    private LinkedList<Integer> adj[]; 
+    int time = 0; 
+    static final int NIL = -1; 
 
-	void addEdge(int v, int w) 
-	{ 
-		adj[v].add(w);  
-		adj[w].add(v);  
-	} 
- 
-	void APUtil(int u, boolean visited[], int disc[], 
-				int low[], int parent[], boolean ap[]) 
-	{ 
+    Graph(int v) 
+    { 
+        V = v; 
+        adj = new LinkedList[v]; 
+        for (int i=0; i<v; ++i) 
+            adj[i] = new LinkedList(); 
+    } 
 
-		int children = 0; 
+    void addEdge(int v, int w) 
+    { 
+        adj[v].add(w);  
+        adj[w].add(v);  
+    } 
 
-		visited[u] = true; 
+    void APUtil(int u, boolean visited[], int disc[], 
+                int low[], int parent[], boolean ap[]) 
+    { 
 
-		disc[u] = low[u] = ++time; 
+        int children = 0; 
 
-		Iterator<Integer> i = adj[u].iterator(); 
-		while (i.hasNext()) 
-		{ 
-			int v = i.next(); 
-			if (!visited[v]) 
-			{ 
-				children++; 
-				parent[v] = u; 
-				APUtil(v, visited, disc, low, parent, ap); 
+        visited[u] = true; 
 
-		 
-				low[u] = Math.min(low[u], low[v]); 
+        disc[u] = low[u] = ++time; 
+
+        Iterator<Integer> i = adj[u].iterator(); 
+        while (i.hasNext()) 
+        { 
+            int v = i.next(); 
+            if (!visited[v]) 
+            { 
+                children++; 
+                parent[v] = u; 
+                APUtil(v, visited, disc, low, parent, ap); 
 
 
-				if (parent[u] == NIL && children > 1) 
-					ap[u] = true; 
+                low[u] = Math.min(low[u], low[v]); 
 
-				if (parent[u] != NIL && low[v] >= disc[u]) 
-					ap[u] = true; 
-			} 
 
-			else if (v != parent[u]) 
-				low[u] = Math.min(low[u], disc[v]); 
-		} 
-	} 
+                if (parent[u] == NIL && children > 1) 
+                    ap[u] = true; 
 
-	void AP() 
-	{ 
-		
-		boolean visited[] = new boolean[V]; 
-		int disc[] = new int[V]; 
-		int low[] = new int[V]; 
-		int parent[] = new int[V]; 
-		boolean ap[] = new boolean[V];
+                if (parent[u] != NIL && low[v] >= disc[u]) 
+                    ap[u] = true; 
+            } 
 
-	
-		for (int i = 0; i < V; i++) 
-		{ 
-			parent[i] = NIL; 
-			visited[i] = false; 
-			ap[i] = false; 
-		} 
- 
-		for (int i = 0; i < V; i++) 
-			if (visited[i] == false) 
-				APUtil(i, visited, disc, low, parent, ap); 
- 
-		for (int i = 0; i < V; i++) 
-			if (ap[i] == true) 
-				System.out.print(i+" "); 
-	} 
+            else if (v != parent[u]) 
+                low[u] = Math.min(low[u], disc[v]); 
+        } 
+    } 
 
-	public static void main(String args[]) 
-	{ 
-		System.out.println("Articulation points in first graph "); 
-		Graph g = new Graph(5); 
-		g.addEdge(1, 0); 
-		g.addEdge(0, 2); 
-		g.addEdge(2, 1); 
-		g.addEdge(0, 3); 
-		g.addEdge(3, 4); 
-		g.AP(); 
-		System.out.println(); 
-	} 
-} 
+    void AP() 
+    { 
+
+        boolean visited[] = new boolean[V]; 
+        int disc[] = new int[V]; 
+        int low[] = new int[V]; 
+        int parent[] = new int[V]; 
+        boolean ap[] = new boolean[V];
+
+
+        for (int i = 0; i < V; i++) 
+        { 
+            parent[i] = NIL; 
+            visited[i] = false; 
+            ap[i] = false; 
+        } 
+
+        for (int i = 0; i < V; i++) 
+            if (visited[i] == false) 
+                APUtil(i, visited, disc, low, parent, ap); 
+
+        for (int i = 0; i < V; i++) 
+            if (ap[i] == true) 
+                System.out.print(i+" "); 
+    } 
+
+    public static void main(String args[]) 
+    { 
+        System.out.println("Articulation points in first graph "); 
+        Graph g = new Graph(5); 
+        g.addEdge(1, 0); 
+        g.addEdge(0, 2); 
+        g.addEdge(2, 1); 
+        g.addEdge(0, 3); 
+        g.addEdge(3, 4); 
+        g.AP(); 
+        System.out.println(); 
+    } 
+}
 ```
 
 ## Bridges in Graph
+
 ```java
 import java.io.*; 
 import java.util.*; 
 import java.util.LinkedList; 
- 
+
 class Graph 
 { 
-	private int V; 
+    private int V; 
 
-	private LinkedList<Integer> adj[]; 
-	int time = 0; 
-	static final int NIL = -1; 
+    private LinkedList<Integer> adj[]; 
+    int time = 0; 
+    static final int NIL = -1; 
 
-	Graph(int v) 
-	{ 
-		V = v; 
-		adj = new LinkedList[v]; 
-		for (int i=0; i<v; ++i) 
-			adj[i] = new LinkedList(); 
-	} 
+    Graph(int v) 
+    { 
+        V = v; 
+        adj = new LinkedList[v]; 
+        for (int i=0; i<v; ++i) 
+            adj[i] = new LinkedList(); 
+    } 
 
-	void addEdge(int v, int w) 
-	{ 
-		adj[v].add(w);  
-		adj[w].add(v); 
-	} 
-
- 
-	void bridgeUtil(int u, boolean visited[], int disc[], int low[], int parent[]) 
-	{ 
-
-		visited[u] = true; 
-
-		disc[u] = low[u] = ++time; 
- 
-		Iterator<Integer> i = adj[u].iterator(); 
-		while (i.hasNext()) 
-		{ 
-			int v = i.next(); 
-
-			if (!visited[v]) 
-			{ 
-				parent[v] = u; 
-				bridgeUtil(v, visited, disc, low, parent); 
-
-	
-				low[u] = Math.min(low[u], low[v]); 
-
-				 
-				if (low[v] > disc[u]) 
-					System.out.println(u+" "+v); 
-			} 
-
-		
-			else if (v != parent[u]) 
-				low[u] = Math.min(low[u], disc[v]); 
-		} 
-	} 
-
-	void bridge() 
-	{ 
-		boolean visited[] = new boolean[V]; 
-		int disc[] = new int[V]; 
-		int low[] = new int[V]; 
-		int parent[] = new int[V]; 
-
- 
-		for (int i = 0; i < V; i++) 
-		{ 
-			parent[i] = NIL; 
-			visited[i] = false; 
-		} 
+    void addEdge(int v, int w) 
+    { 
+        adj[v].add(w);  
+        adj[w].add(v); 
+    } 
 
 
-		for (int i = 0; i < V; i++) 
-			if (visited[i] == false) 
-				bridgeUtil(i, visited, disc, low, parent); 
-	} 
+    void bridgeUtil(int u, boolean visited[], int disc[], int low[], int parent[]) 
+    { 
 
-	public static void main(String args[]) 
-	{ 
-		System.out.println("Bridges in first graph "); 
-		Graph g = new Graph(5); 
-		g.addEdge(1, 0); 
-		g.addEdge(0, 2); 
-		g.addEdge(2, 1); 
-		g.addEdge(0, 3); 
-		g.addEdge(3, 4); 
-		g.bridge(); 
-	}
+        visited[u] = true; 
 
-} 
+        disc[u] = low[u] = ++time; 
+
+        Iterator<Integer> i = adj[u].iterator(); 
+        while (i.hasNext()) 
+        { 
+            int v = i.next(); 
+
+            if (!visited[v]) 
+            { 
+                parent[v] = u; 
+                bridgeUtil(v, visited, disc, low, parent); 
+
+
+                low[u] = Math.min(low[u], low[v]); 
+
+
+                if (low[v] > disc[u]) 
+                    System.out.println(u+" "+v); 
+            } 
+
+
+            else if (v != parent[u]) 
+                low[u] = Math.min(low[u], disc[v]); 
+        } 
+    } 
+
+    void bridge() 
+    { 
+        boolean visited[] = new boolean[V]; 
+        int disc[] = new int[V]; 
+        int low[] = new int[V]; 
+        int parent[] = new int[V]; 
+
+
+        for (int i = 0; i < V; i++) 
+        { 
+            parent[i] = NIL; 
+            visited[i] = false; 
+        } 
+
+
+        for (int i = 0; i < V; i++) 
+            if (visited[i] == false) 
+                bridgeUtil(i, visited, disc, low, parent); 
+    } 
+
+    public static void main(String args[]) 
+    { 
+        System.out.println("Bridges in first graph "); 
+        Graph g = new Graph(5); 
+        g.addEdge(1, 0); 
+        g.addEdge(0, 2); 
+        g.addEdge(2, 1); 
+        g.addEdge(0, 3); 
+        g.addEdge(3, 4); 
+        g.bridge(); 
+    }
+
+}
 ```
 
 ## Tarjans Algorithm
+
 ```java
 import java.io.*; 
 import java.util.*; 
@@ -1350,103 +1370,103 @@ private int Time;
 @SuppressWarnings("unchecked") 
 Graph(int v) 
 { 
-	V = v; 
-	adj = new LinkedList[v]; 
-	
-	for(int i = 0; i < v; ++i) 
-		adj[i] = new LinkedList(); 
-		
-	Time = 0; 
+    V = v; 
+    adj = new LinkedList[v]; 
+
+    for(int i = 0; i < v; ++i) 
+        adj[i] = new LinkedList(); 
+
+    Time = 0; 
 } 
 
 void addEdge(int v,int w) 
 { 
-	adj[v].add(w); 
+    adj[v].add(w); 
 } 
 
 void SCCUtil(int u, int low[], int disc[], boolean stackMember[], Stack<Integer> st) 
 { 
-	disc[u] = Time; 
-	low[u] = Time; 
-	Time += 1; 
-	stackMember[u] = true; 
-	st.push(u); 
+    disc[u] = Time; 
+    low[u] = Time; 
+    Time += 1; 
+    stackMember[u] = true; 
+    st.push(u); 
 
-	int n; 
-	
-	Iterator<Integer> i = adj[u].iterator(); 
-	
-	while (i.hasNext()) 
-	{ 
-		n = i.next(); 
-		
-		if (disc[n] == -1) 
-		{ 
-			SCCUtil(n, low, disc, stackMember, st); 
-			
-		
-			low[u] = Math.min(low[u], low[n]); 
-		} 
-		else if (stackMember[n] == true) 
-		{ 
-	
-			low[u] = Math.min(low[u], disc[n]); 
-		} 
-	} 
+    int n; 
 
-	int w = -1; 
-	if (low[u] == disc[u]) 
-	{ 
-		while (w != u) 
-		{ 
-			w = (int)st.pop(); 
-			System.out.print(w + " "); 
-			stackMember[w] = false; 
-		} 
-		System.out.println(); 
-	} 
+    Iterator<Integer> i = adj[u].iterator(); 
+
+    while (i.hasNext()) 
+    { 
+        n = i.next(); 
+
+        if (disc[n] == -1) 
+        { 
+            SCCUtil(n, low, disc, stackMember, st); 
+
+
+            low[u] = Math.min(low[u], low[n]); 
+        } 
+        else if (stackMember[n] == true) 
+        { 
+
+            low[u] = Math.min(low[u], disc[n]); 
+        } 
+    } 
+
+    int w = -1; 
+    if (low[u] == disc[u]) 
+    { 
+        while (w != u) 
+        { 
+            w = (int)st.pop(); 
+            System.out.print(w + " "); 
+            stackMember[w] = false; 
+        } 
+        System.out.println(); 
+    } 
 } 
 
 void SCC() 
 { 
-	
-	int disc[] = new int[V]; 
-	int low[] = new int[V]; 
-	for(int i = 0;i < V; i++) 
-	{ 
-		disc[i] = -1; 
-		low[i] = -1; 
-	} 
-	
-	boolean stackMember[] = new boolean[V]; 
-	Stack<Integer> st = new Stack<Integer>(); 
 
-	for(int i = 0; i < V; i++) 
-	{ 
-		if (disc[i] == -1) 
-			SCCUtil(i, low, disc, stackMember, st); 
-	} 
+    int disc[] = new int[V]; 
+    int low[] = new int[V]; 
+    for(int i = 0;i < V; i++) 
+    { 
+        disc[i] = -1; 
+        low[i] = -1; 
+    } 
+
+    boolean stackMember[] = new boolean[V]; 
+    Stack<Integer> st = new Stack<Integer>(); 
+
+    for(int i = 0; i < V; i++) 
+    { 
+        if (disc[i] == -1) 
+            SCCUtil(i, low, disc, stackMember, st); 
+    } 
 } 
 
 public static void main(String args[]) 
 { 
-	Graph g = new Graph(5); 
+    Graph g = new Graph(5); 
 
-	g.addEdge(1, 0); 
-	g.addEdge(0, 2); 
-	g.addEdge(2, 1); 
-	g.addEdge(0, 3); 
-	g.addEdge(3, 4); 
-	System.out.println("SSC in the graph "); 
-	g.SCC(); 
+    g.addEdge(1, 0); 
+    g.addEdge(0, 2); 
+    g.addEdge(2, 1); 
+    g.addEdge(0, 3); 
+    g.addEdge(3, 4); 
+    System.out.println("SSC in the graph "); 
+    g.SCC(); 
 
 } 
-} 
+}
 ```
 
 ## Kruskal's Algorithm
-```java
 
+```java
 // Java program for Kruskal's algorithm to find Minimum 
 // Spanning Tree of a given connected, undirected and 
 // weighted graph 
@@ -1615,3 +1635,4 @@ class Graph {
     }
 }
 ```
+
