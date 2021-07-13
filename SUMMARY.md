@@ -24,6 +24,7 @@
   * [Bit Manipulation](maths/bit-man.md)
   * [Hashing](maths/hashing.md)
   * [Theory](maths/theory.md)
+* [Disjointed Sets](disjointed-sets.md)
 * [Algo](algo/README.md)
   * [Searching](algo/searching.md)
   * [Sorting](algo/sorting.md)
