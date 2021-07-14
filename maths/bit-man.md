@@ -170,7 +170,37 @@ class countSetBits
     } 
 }
 ```
+## To Count Set Bits in First N natural numbers 
+``` java
+static int twopower(int n) {
+		int x=0;
+		while((1<<x)<=n) {
+			x++;
+		}
+		return x-1;
+	}
+	static int  totalbit(int n) {
+		if(n==0) {return 0;}
+		int x=twopower(n);
+		int a=x*(1<<(x-1));
+		int b=n-(1<<x)+1;
+		int c=n-(1<<x);
+		int res=a+b+totalbit(c);
+		
+		return res;
+		
+		
+	}
+	Driver program
+	public static void main(String[] args) {
+	
+		
+      int a=6;
+      System.out.println(totalbit(a));
+	}
 
+}
+```
 ## Find the Number Occurring Odd Number of Times
 
 ```java
