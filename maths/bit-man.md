@@ -36,7 +36,9 @@ class Program
     } 
 }
 ```
+
 ##check if the number is Odd or Even
+
 
 ```java
 //  "&" operator
@@ -52,7 +54,7 @@ static void evenodd(int n) {
 }
 
 
-Driver code
+//Driver code
 	public static void main(String[] args) {
 int a=4;
 evenodd(a);
@@ -60,7 +62,10 @@ evenodd(a);
 }
 ```
 
+
 ## To swap two numbers 
+
+
 ``` java
 static void swap(int a,int b) {
 		System.out.println(a+" "+ b);
@@ -70,7 +75,7 @@ static void swap(int a,int b) {
 	System.out.println(a+" "+ b);
 	}
 
-Driver code
+//Driver code
 public static void main(String[] args) {
 int a=3,b=5;
 swap(a,b);
@@ -105,7 +110,11 @@ class Program
     } 
 }
 ```
+
+
 ##Find the number Occurring only once rest Occurring k times
+
+
 ```java
 static int single(int a[],int k) {
 		int count[]=new int [32];
@@ -126,7 +135,7 @@ static int single(int a[],int k) {
 			
 			
 	}
-	Driver code
+	//Driver code
 	public static void main(String[] args) {
 		
 int a[]= {2,3,4,5,3,2,4};
@@ -138,6 +147,7 @@ System.out.println(b);
 ```
  
 ## Count set bits
+
 
 ```java
 // Java program to Count set  
@@ -170,7 +180,11 @@ class countSetBits
     } 
 }
 ```
+
+
 ## To Count Set Bits in First N natural numbers 
+
+
 ``` java
 static int twopower(int n) {
 		int x=0;
@@ -191,7 +205,7 @@ static int twopower(int n) {
 		
 		
 	}
-	Driver program
+	//Driver program
 	public static void main(String[] args) {
 	
 		
@@ -201,6 +215,7 @@ static int twopower(int n) {
 
 }
 ```
+
 ## Find the Number Occurring Odd Number of Times
 
 ```java
