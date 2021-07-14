@@ -4,6 +4,7 @@ description: ON/OFF
 
 # Bit Manipulation
 
+
 ## Check if the kth bit is set or not
 
 ```java
@@ -36,7 +37,57 @@ class Program
 }
 ```
 
+
+## Check If The Number is Odd or Even 
+
+
+```java
+//  "&" operator
+// [ 1 & 1 = 1 ]  [1 & 0 = 0]
+//as we know one's digit of number is 1 if it is odd or 0 if it is even
+//therefore 
+static void evenodd(int n) {
+	if((n&1)==1) {  
+		 System.out.println("odd");
+	}else {
+		System.out.println("even");
+	}
+}
+
+
+//Driver code
+	public static void main(String[] args) {
+int a=4;
+evenodd(a);
+	}
+}
+```
+
+
+## To swap two numbers 
+
+
+``` java
+static void swap(int a,int b) {
+		System.out.println(a+" "+ b);
+	a=a^b;            //xor of a and b  will be stored in a
+	b=a^b;            //value of a will be store in b
+	a=a^b;           //value of b will be store in a
+	System.out.println(a+" "+ b);
+	}
+
+//Driver code
+public static void main(String[] args) {
+int a=3,b=5;
+swap(a,b);
+}
+}
+
+```
+
+
 ## Check if a number is a power of 2
+
 
 ```java
 // Java program to efficiently  
@@ -63,7 +114,43 @@ class Program
 }
 ```
 
+
+## Find The Number Occurring only once rest Occurring k times
+
+
+```java
+static int single(int a[],int k) {
+		int count[]=new int [32];
+		
+		
+		for(int i=0;i<32;i++) {
+			for(int j=0;j<a.length;j++) {
+				if((a[j]&(1<<i))!=0) {
+				count[i]+=1;
+			}
+		}
+		}
+			int res=0;
+			for(int i=0;i<32;i++) {
+				res+=(count[i]%k)*(1<<i);
+			}
+			return res;
+			
+			
+	}
+	//Driver code
+	public static void main(String[] args) {
+		
+int a[]= {2,3,4,5,3,2,4};
+int b=single(a,2);
+System.out.println(b);
+	}
+
+}
+```
+ 
 ## Count set bits
+
 
 ```java
 // Java program to Count set  
@@ -94,6 +181,41 @@ class countSetBits
            int i = 9; 
         System.out.println(countSetBits(i)); 
     } 
+}
+```
+
+
+## To Count Set Bits in First N natural numbers 
+
+
+``` java
+static int twopower(int n) {
+		int x=0;
+		while((1<<x)<=n) {
+			x++;
+		}
+		return x-1;
+	}
+	static int  totalbit(int n) {
+		if(n==0) {return 0;}
+		int x=twopower(n);
+		int a=x*(1<<(x-1));
+		int b=n-(1<<x)+1;
+		int c=n-(1<<x);
+		int res=a+b+totalbit(c);
+		
+		return res;
+		
+		
+	}
+	//Driver program
+	public static void main(String[] args) {
+	
+		
+      int a=6;
+      System.out.println(totalbit(a));
+	}
+
 }
 ```
 
