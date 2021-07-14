@@ -38,7 +38,7 @@ class Program
 ```
 
 
-##Check If The Number is Odd or Even 
+## Check If The Number is Odd or Even 
 
 
 ```java
@@ -115,7 +115,7 @@ class Program
 ```
 
 
-##Find The Number Occurring only once rest Occurring k times
+## Find The Number Occurring only once rest Occurring k times
 
 
 ```java
