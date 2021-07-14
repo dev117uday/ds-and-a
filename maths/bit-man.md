@@ -37,7 +37,8 @@ class Program
 }
 ```
 
-##check if the number is Odd or Even
+
+##Check If The Number is Odd or Even 
 
 
 ```java
@@ -84,7 +85,9 @@ swap(a,b);
 
 ```
 
+
 ## Check if a number is a power of 2
+
 
 ```java
 // Java program to efficiently  
@@ -112,7 +115,7 @@ class Program
 ```
 
 
-##Find the number Occurring only once rest Occurring k times
+##Find The Number Occurring only once rest Occurring k times
 
 
 ```java
